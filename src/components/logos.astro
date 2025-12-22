@@ -1,18 +1,22 @@
 ---
-// @ts-ignore
-import { Icon } from "astro-icon/components";
+const bullets = [
+  "Born from real education operations since 2013",
+  "Open-source core, self-hostable",
+  "Hosted option if you want it managed",
+  "Designed for online-first cohorts and feedback loops",
+];
 ---
 
 <div class="mt-24">
-  <h2 class="text-center text-slate-500">Works with your technologies</h2>
-  <div class="flex gap-8 md:gap-20 items-center justify-center mt-10 flex-wrap">
+  <h2 class="text-center text-slate-500">What EduMyna optimizes for</h2>
 
-    <Icon class="size-8 md:size-12" name="simple-icons:react" />
-    <Icon class="size-8 md:size-12" name="simple-icons:svelte" />
-    <Icon class="size-8 md:size-12" name="simple-icons:astro" />
-    <Icon class="size-8 md:size-16" name="simple-icons:tailwindcss" />
-    <Icon class="size-8 md:size-16" name="simple-icons:alpinedotjs" />
-    <Icon class="size-8 md:size-12" name="simple-icons:vercel" />
-
+  <div class="mt-10 mx-auto max-w-4xl grid sm:grid-cols-2 gap-4">
+    {
+      bullets.map((b) => (
+        <div class="rounded-lg border border-slate-200 bg-white p-4 text-slate-700">
+          {b}
+        </div>
+      ))
+    }
   </div>
 </div>

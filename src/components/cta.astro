@@ -1,17 +1,25 @@
 ---
 import Link from "./ui/link.astro";
+
+const GITHUB_REPO = "https://github.com/EduMyna/EduMyna";
 ---
 
-<div
-  class="bg-black p-8 md:px-20 md:py-20 mt-20 mx-auto max-w-5xl rounded-lg flex flex-col items-center text-center">
+<div class="bg-black p-8 md:px-20 md:py-20 mt-20 mx-auto max-w-5xl rounded-lg flex flex-col items-center text-center">
   <h2 class="text-white text-4xl md:text-6xl tracking-tight">
-    Build faster websites.
+    Start self-hosted. Upgrade when you want it managed.
   </h2>
-  <p class="text-slate-400 mt-4 text-lg md:text-xl">
-    Pull content from anywhere and serve it fast with Astro's next-gen island
-    architecture.
+  <p class="text-slate-400 mt-4 text-lg md:text-xl max-w-3xl">
+    Use the open-source core for free, or choose the hosted plan if you want support and a managed deployment.
   </p>
-  <div class="flex mt-5">
-    <Link href="#" style="inverted">Get Started</Link>
+
+  <div class="flex flex-col sm:flex-row gap-3 mt-6">
+    <a
+      href={GITHUB_REPO}
+      target="_blank"
+      rel="noopener noreferrer"
+      class="inline-flex items-center justify-center rounded-md bg-white px-5 py-3 text-sm font-semibold text-black hover:bg-slate-100">
+      View GitHub
+    </a>
+    <Link href="/pricing" style="inverted">See pricing</Link>
   </div>
 </div>

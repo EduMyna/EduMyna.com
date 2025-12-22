@@ -3,51 +3,55 @@ import { Picture } from "astro:assets";
 import heroImage from "@/assets/hero.png";
 import Link from "@/components/ui/link.astro";
 import { Icon } from "astro-icon/components";
+
+const GITHUB_REPO = "https://github.com/EduMyna/EduMyna";
 ---
 
-<main
-  class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-12 md:pb-24">
+<main class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-12 md:pb-24">
   <div class="py-6 md:order-1 hidden md:block">
     <Picture
       src={heroImage}
-      alt="Astronaut in the air"
+      alt="EduMyna learning platform"
       widths={[200, 400, 600]}
       sizes="(max-width: 800px) 100vw, 620px"
       loading="eager"
       format="avif"
     />
   </div>
-  <div>
-    <h1
-      class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight xl:tracking-tighter">
-      Marketing website done with Astro
-    </h1>
-    <p class="text-lg mt-4 text-slate-600 max-w-xl">
-      Astroship is a starter template for startups, marketing websites & landing
-      pages.<wbr /> Built with Astro.build and TailwindCSS. You can quickly create
-      any website with this starter.
-    </p>
-    <div class="mt-6 flex flex-col sm:flex-row gap-3">
-      <Link
-        href="#"
-        href="https://web3templates.com/templates/astroship-starter-website-template-for-astro"
-        target="_blank"
-        class="flex gap-1 items-center justify-center"
-        rel="noopener">
-        <Icon class="text-white w-5 h-5" name="bx:bxs-cloud-download" />
 
-        Download for Free
+  <div>
+    <h1 class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight xl:tracking-tighter">
+      An open learning platform built for real programs
+    </h1>
+
+    <p class="text-lg mt-4 text-slate-600 max-w-xl">
+      EduMyna is an online-first learning platform shaped by a decade of running education initiatives with real constraints.
+      Use it to run cohorts, deliver structured learning, and build feedback loops that actually help learners improve.
+    </p>
+
+    <div class="mt-6 flex flex-col sm:flex-row gap-3">
+      <Link href="/#features" class="flex gap-1 items-center justify-center">
+        <Icon class="text-white w-5 h-5" name="bx:bxs-bolt" />
+        Explore features
       </Link>
-      <Link
-        size="lg"
-        style="outline"
-        rel="noopener"
-        href="https://github.com/surjithctly/astroship"
-        class="flex gap-1 items-center justify-center"
-        target="_blank">
+
+      <Link size="lg" style="outline" href="/pricing" class="flex gap-1 items-center justify-center">
+        <Icon class="text-black w-4 h-4" name="bx:bxs-purchase-tag" />
+        See pricing
+      </Link>
+
+      <a
+        href={GITHUB_REPO}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-flex items-center justify-center gap-2 rounded-md border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50">
         <Icon class="text-black w-4 h-4" name="bx:bxl-github" />
-        GitHub Repo
-      </Link>
+        GitHub
+      </a>
     </div>
+
+    <p class="mt-5 text-sm text-slate-500">
+      Self-host it for free, or use the hosted version if you want it managed.
+    </p>
   </div>
 </main>
