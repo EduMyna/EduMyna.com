@@ -5,25 +5,28 @@ import Container from "@/components/container.astro";
 
 <Layout
   title="Story"
-  description="How EduMyna emerged from real education constraints, systems failures, and a decade of running programs at scale."
+  description="How EduMyna emerged from real education constraints, systems failures, and a decade of operating programs at scale."
 >
+  <!-- Hero -->
+  <section class="bg-slate-50 border-b border-slate-200">
+    <Container>
+      <div class="max-w-4xl py-20">
+        <h1 class="text-5xl lg:text-6xl font-bold tracking-tight">
+          A platform shaped by reality
+        </h1>
+        <p class="mt-6 text-xl text-slate-600 max-w-3xl">
+          EduMyna wasn’t imagined in a pitch deck. It emerged slowly from the
+          operational realities of running education programs where scale,
+          quality, and accountability actually mattered.
+        </p>
+      </div>
+    </Container>
+  </section>
+
   <Container>
-    <!-- Hero -->
-    <section class="max-w-3xl mx-auto pt-16 pb-12">
-      <h1 class="text-4xl lg:text-5xl font-bold tracking-tight">
-        Built from constraints, not theory
-      </h1>
-
-      <p class="mt-6 text-lg text-slate-600">
-        EduMyna did not start as a startup idea. It emerged slowly from the
-        realities of running education programs where scale, quality, and
-        accountability actually mattered.
-      </p>
-    </section>
-
-    <!-- Video placeholder -->
-    <section class="max-w-4xl mx-auto mb-20">
-      <div class="aspect-video rounded-lg border border-slate-200 bg-slate-50 flex items-center justify-center text-slate-500">
+    <!-- Video -->
+    <section class="max-w-5xl mx-auto my-20">
+      <div class="aspect-video rounded-xl border border-slate-200 bg-slate-100 flex items-center justify-center text-slate-500">
         Founder video goes here
       </div>
       <p class="text-sm text-slate-500 mt-3 text-center">
@@ -32,68 +35,68 @@ import Container from "@/components/container.astro";
     </section>
 
     <!-- Timeline -->
-    <section class="max-w-4xl mx-auto space-y-16">
-      <!-- 2013 -->
-      <div class="grid md:grid-cols-[120px_1fr] gap-6">
-        <div class="text-slate-400 font-semibold">2013</div>
-        <div>
-          <h3 class="text-xl font-semibold">Entering education through operations</h3>
+    <section class="max-w-5xl mx-auto mb-32">
+      <h2 class="text-3xl font-semibold mb-12">
+        The evolution
+      </h2>
+
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Card -->
+        <div class="rounded-xl border border-slate-200 p-6">
+          <span class="text-sm text-slate-400 font-medium">2013</span>
+          <h3 class="text-xl font-semibold mt-2">
+            Entering education through operations
+          </h3>
           <p class="mt-3 text-slate-600">
-            The work began inside a nonprofit education ecosystem that needed to
-            scale without losing intent. The problem was not content. It was
-            systems, ownership, and sustainability.
+            The work began inside a nonprofit education ecosystem struggling with
+            scale and sustainability. The real problem wasn’t content. It was
+            systems.
           </p>
         </div>
-      </div>
 
-      <!-- Online-first -->
-      <div class="grid md:grid-cols-[120px_1fr] gap-6">
-        <div class="text-slate-400 font-semibold">Early years</div>
-        <div>
-          <h3 class="text-xl font-semibold">Online-first was a necessity</h3>
+        <div class="rounded-xl border border-slate-200 p-6">
+          <span class="text-sm text-slate-400 font-medium">Early years</span>
+          <h3 class="text-xl font-semibold mt-2">
+            Online-first became unavoidable
+          </h3>
           <p class="mt-3 text-slate-600">
-            Programs had to work across geographies, time zones, and learner
-            maturity levels. This forced an online-first approach long before it
-            was fashionable.
+            Programs had to work across geographies and maturity levels. This
+            forced an online-first approach long before it became mainstream.
           </p>
         </div>
-      </div>
 
-      <!-- Platform -->
-      <div class="grid md:grid-cols-[120px_1fr] gap-6">
-        <div class="text-slate-400 font-semibold">Iteration</div>
-        <div>
-          <h3 class="text-xl font-semibold">The platform followed the problems</h3>
+        <div class="rounded-xl border border-slate-200 p-6">
+          <span class="text-sm text-slate-400 font-medium">Iteration</span>
+          <h3 class="text-xl font-semibold mt-2">
+            The platform followed the pain
+          </h3>
           <p class="mt-3 text-slate-600">
-            The first line of code was written to remove operational bottlenecks.
-            Structure, feedback loops, and progression were built to support real
-            delivery, not dashboards.
+            Every feature emerged from operational bottlenecks. Structure,
+            feedback loops, and progression were built to support delivery, not
+            vanity metrics.
           </p>
         </div>
-      </div>
 
-      <!-- Open source -->
-      <div class="grid md:grid-cols-[120px_1fr] gap-6">
-        <div class="text-slate-400 font-semibold">Open source</div>
-        <div>
-          <h3 class="text-xl font-semibold">Transparency over control</h3>
+        <div class="rounded-xl border border-slate-200 p-6">
+          <span class="text-sm text-slate-400 font-medium">Open source</span>
+          <h3 class="text-xl font-semibold mt-2">
+            Transparency over control
+          </h3>
           <p class="mt-3 text-slate-600">
-            The core was made open-source to allow adaptation, scrutiny, and
-            long-term trust. Self-hosting was not an afterthought. It was a
-            principle.
+            The core was made open-source to allow adaptation, scrutiny, and long
+            term trust. Self-hosting was a principle, not an upsell.
           </p>
         </div>
-      </div>
 
-      <!-- EduMyna -->
-      <div class="grid md:grid-cols-[120px_1fr] gap-6">
-        <div class="text-slate-400 font-semibold">Today</div>
-        <div>
-          <h3 class="text-xl font-semibold">EduMyna</h3>
-          <p class="mt-3 text-slate-600">
+        <div class="md:col-span-2 rounded-xl border border-slate-200 p-6 bg-slate-50">
+          <span class="text-sm text-slate-400 font-medium">Today</span>
+          <h3 class="text-xl font-semibold mt-2">
+            EduMyna
+          </h3>
+          <p class="mt-3 text-slate-600 max-w-3xl">
             EduMyna is the consolidation of these learnings into a platform for
             people running real programs. It optimizes for clarity, iteration,
-            and responsibility rather than scale-at-any-cost growth.
+            and responsibility rather than growth-at-any-cost.
           </p>
         </div>
       </div>
