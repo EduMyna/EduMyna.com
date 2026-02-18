@@ -6,58 +6,58 @@ import PricingCard from "@/components/pricing.astro";
 
 const pricing = [
   {
-    name: "Personal",
+    name: "Self-Hosted",
     price: "Free",
     popular: false,
     features: [
-      "Lifetime free",
-      "Up to 3 users",
-      "Unlimited Pages",
-      "Astro Sub domain",
-      "Basic Integrations",
-      "Community Support",
+      "Unlimited cohorts",
+      "Unlimited learners",
+      "Full source code access",
+      "Your own infrastructure",
+      "Community support",
+      "MIT licensed forever",
     ],
     button: {
-      text: "Get Started",
-      link: "/",
+      text: "View on GitHub",
+      link: "https://github.com/EduMyna/EduMyna",
     },
   },
   {
-    name: "Startup",
+    name: "Managed",
     price: {
-      monthly: "$19",
-      annual: "$16",
-      discount: "10%",
-      original: "$24",
+      monthly: "$49",
+      annual: "$39",
+      discount: "20%",
+      original: "$49",
     },
     popular: true,
     features: [
-      "All Free Features",
-      "Up to 20 users",
-      "20 Custom domains",
-      "Unlimited Collaborators",
-      "Advanced Integrations",
-      "Priority Support",
+      "Up to 500 learners",
+      "Unlimited cohorts",
+      "Managed hosting",
+      "Automatic backups",
+      "Email support",
+      "Custom domain",
     ],
     button: {
-      text: "Get Started",
-      link: "#",
+      text: "Start free trial",
+      link: "/contact",
     },
   },
   {
-    name: "Enterprise",
+    name: "Scale",
     price: "Custom",
     popular: false,
     features: [
-      "All Pro Features",
-      "Unlimited Custom domains",
-      "99.99% Uptime SLA",
-      "SAML & SSO Integration",
-      "Dedicated Account Manager",
-      "24/7 Phone Support",
+      "Unlimited learners",
+      "Unlimited cohorts",
+      "Dedicated infrastructure",
+      "SSO & API access",
+      "Onboarding support",
+      "SLA & priority support",
     ],
     button: {
-      text: "Contact us",
+      text: "Talk to us",
       link: "/contact",
     },
   },
@@ -69,7 +69,7 @@ const pricing = [
     <Sectionhead>
       <Fragment slot="title">Pricing</Fragment>
       <Fragment slot="desc">
-        Simple & Predictable pricing. No Surprises.
+        Self-host for free, or let us run it. No per-seat pricing games.
       </Fragment>
     </Sectionhead>
 
