@@ -5,101 +5,505 @@ import Container from "@/components/container.astro";
 
 <Layout
   title="Story"
-  description="How EduMyna emerged from real education constraints, systems failures, and a decade of operating programs at scale."
+  description="Twelve years of building education programs, from a physical incubator in Kochi to EduMyna. The founder story behind the platform."
 >
+
   <!-- Hero -->
-  <section class="bg-slate-50 border-b border-slate-200">
+  <section class="bg-slate-900 text-white border-b border-slate-800">
     <Container>
-      <div class="max-w-4xl py-20">
-        <h1 class="text-5xl lg:text-6xl font-bold tracking-tight">
-          A platform shaped by reality
+      <div class="max-w-4xl py-24 md:py-32">
+        <p class="text-sm font-medium tracking-widest uppercase text-slate-400 mb-6">Founder Story</p>
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight">
+          Twelve years building education that <em class="font-serif italic text-slate-300">actually works</em>
         </h1>
-        <p class="mt-6 text-xl text-slate-600 max-w-3xl">
-          EduMyna wasn’t imagined in a pitch deck. It emerged slowly from the
-          operational realities of running education programs where scale,
-          quality, and accountability actually mattered.
+        <p class="mt-6 text-xl text-slate-400 max-w-3xl">
+          What I learned supporting 500+ startups, partnering with governments and tech giants, and discovering what students actually need—and why all of it led to EduMyna.
         </p>
+        <div class="flex items-center gap-3 mt-10">
+          <div class="w-11 h-11 rounded-full bg-slate-700 flex items-center justify-center text-lg font-semibold text-white shrink-0">G</div>
+          <div>
+            <p class="text-sm font-semibold text-white">Gautam</p>
+            <p class="text-sm text-slate-500">Founder, EduMyna &middot; Previously Startup Village, SV.CO, Pupilfirst & The Second Design</p>
+          </div>
+        </div>
       </div>
     </Container>
   </section>
 
   <Container>
-    <!-- Video -->
-    <section class="max-w-5xl mx-auto my-20">
-      <div class="aspect-video rounded-xl border border-slate-200 bg-slate-100 flex items-center justify-center text-slate-500">
-        Founder video goes here
-      </div>
-      <p class="text-sm text-slate-500 mt-3 text-center">
-        A short, direct explanation of why EduMyna exists
-      </p>
-    </section>
+    <article class="max-w-3xl mx-auto py-16 md:py-24 space-y-0">
 
-    <!-- Timeline -->
-    <section class="max-w-5xl mx-auto mb-32">
-      <h2 class="text-3xl font-semibold mb-12">
-        The evolution
-      </h2>
+      <!-- Intro -->
+      <section class="mb-16">
+        <p class="text-lg text-slate-700 leading-relaxed mb-6">
+          I've been trying to explain this for years. Every pitch deck, every investor call, every introductory Zoom—I'd end up in the same place: a five-minute summary of a twelve-year story that kept getting shorter and less honest with each telling.
+        </p>
+        <p class="text-lg text-slate-700 leading-relaxed mb-6">
+          So this is the honest version. The one that includes the parts where we were wrong, the experiments that didn't work, the pivots that felt desperate at the time, and the slow accumulation of understanding that eventually became EduMyna.
+        </p>
+        <p class="text-lg text-slate-700 leading-relaxed">
+          It starts in 2009, in Kerala. With a vision for a "Silicon Coast" and a lot of plans we'd eventually have to throw away.
+        </p>
+      </section>
 
-      <div class="grid md:grid-cols-2 gap-8">
-        <!-- Card -->
-        <div class="rounded-xl border border-slate-200 p-6">
-          <span class="text-sm text-slate-400 font-medium">2013</span>
-          <h3 class="text-xl font-semibold mt-2">
-            Entering education through operations
-          </h3>
-          <p class="mt-3 text-slate-600">
-            The work began inside a nonprofit education ecosystem struggling with
-            scale and sustainability. The real problem wasn’t content. It was
-            systems.
+      <!-- Chapter 1 -->
+      <section class="pt-12 border-t border-slate-200 mb-16">
+        <p class="text-xs font-bold tracking-[0.2em] uppercase text-slate-400 mb-4">Chapter 1 &middot; 2009&ndash;2012</p>
+        <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-8">The Dream of a Silicon Coast</h2>
+
+        <p class="text-lg text-slate-700 leading-relaxed mb-6">
+          In 2009, MobME submitted a proposal to the Government of India: create India's first Public-Private-Partnership technology incubator. The vision was ambitious—build a "Silicon Coast" in Kerala by enabling entrepreneurs. The commitment: 10,000 sq ft of space, ₹2.5 crore grant, support 48 startups over five years.
+        </p>
+        <p class="text-lg text-slate-700 leading-relaxed mb-6">
+          Startup Village launched in 2012 as a nonprofit. We opened the doors and people came. Students, aspiring founders, engineers with ideas. At our peak, the physical campus in Kochi housed hundreds of startups. We ran massive programs—distributed 10,000 Raspberry Pis to 8th graders, gave Startup Boxes (MacBooks + iPads + iPhones) to teams, took cohorts to Silicon Valley, partnered with MIT for Fab Labs.
+        </p>
+
+        <!-- Photo: SV Collage -->
+        <figure class="my-10 -mx-4 md:mx-0">
+          <img
+            src="/images/story/sv-collage.jpg"
+            alt="Early Startup Village campus with student founders"
+            class="w-full aspect-video rounded-xl border border-slate-200 object-cover"
+          />
+          <figcaption class="text-sm text-slate-500 mt-3 px-4 md:px-0 italic">
+            Early days at Startup Village—a physical campus that brought hundreds of student founders under one roof.
+          </figcaption>
+        </figure>
+
+        <!-- Stats -->
+        <div class="grid grid-cols-3 border border-slate-200 rounded-xl overflow-hidden my-10">
+          <div class="bg-white p-6 text-center border-r border-slate-200">
+            <span class="block text-3xl font-bold text-slate-900">500</span>
+            <span class="text-xs text-slate-500 font-medium">Startups supported</span>
+          </div>
+          <div class="bg-white p-6 text-center border-r border-slate-200">
+            <span class="block text-3xl font-bold text-slate-900">3,139</span>
+            <span class="text-xs text-slate-500 font-medium">Jobs created</span>
+          </div>
+          <div class="bg-white p-6 text-center">
+            <span class="block text-3xl font-bold text-slate-900">₹45Cr</span>
+            <span class="text-xs text-slate-500 font-medium">Funding raised by alumni</span>
+          </div>
+        </div>
+
+        <p class="text-lg text-slate-700 leading-relaxed mb-6">
+          We exceeded every commitment. Promised 48 startups—supported 500. Total investment: ₹14.6 crores. Notable alumni: FIN Robotics (largest crowdfunding in Asia), Exploride, Asimov Robotics, Sastra Robotics. The ROI was remarkable: for every ₹1 by government, ₹9.68 was invested into startups by investors.
+        </p>
+
+        <p class="text-lg text-slate-700 leading-relaxed mb-6">
+          It felt like something was happening. And for a while, something was. But a crack was forming underneath the energy, and it took us a while to see it clearly.
+        </p>
+
+        <blockquote class="bg-amber-50 border-l-4 border-slate-900 rounded-r-lg p-6 my-10">
+          <p class="text-lg italic text-slate-800 leading-relaxed">
+            "We were helping people. But whether we were building something that could actually scale—that was a different question entirely."
+          </p>
+        </blockquote>
+
+        <p class="text-lg text-slate-700 leading-relaxed mb-6">
+          The crack was this: the model was entirely dependent on a handful of people showing up, every day, for every startup. When the outcomes were good, it was because the founders were excellent and we got lucky with our attention. When they weren't, no one had a system to fall back on.
+        </p>
+        <p class="text-lg text-slate-700 leading-relaxed">
+          We had built a community, not a platform.
+        </p>
+      </section>
+
+      <!-- Chapter 2 -->
+      <section class="pt-12 border-t border-slate-200 mb-16">
+        <p class="text-xs font-bold tracking-[0.2em] uppercase text-slate-400 mb-4">Chapter 2 &middot; 2013&ndash;2015</p>
+        <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-8">The Honest Diagnosis</h2>
+
+        <p class="text-lg text-slate-700 leading-relaxed mb-6">
+          By 2013, business model questions were surfacing. We'd tried everything—client referral fees, the "30@30" model, expansion to Vizag (shut down in 2015—culture didn't scale, location issues). In March 2015, we sat down and wrote a clear-eyed diagnosis of what wasn't working.
+        </p>
+
+        <p class="text-lg text-slate-700 leading-relaxed mb-6">
+          The money was unstable (dependent on government grants). The product was founder-dependent in a way that couldn't scale. Our focus was fragmented. And most importantly: <strong>we could only provide meaningful value to student startups</strong>. Everyone else had better options.
+        </p>
+
+        <div class="bg-slate-50 rounded-lg p-6 border-l-4 border-blue-500 my-10">
+          <p class="text-sm font-semibold text-slate-900 mb-2">Critical Decision (January 2015):</p>
+          <p class="text-sm text-slate-700">
+            "Student startups only." This single decision forced us to get specific about what students actually need.
           </p>
         </div>
 
-        <div class="rounded-xl border border-slate-200 p-6">
-          <span class="text-sm text-slate-400 font-medium">Early years</span>
-          <h3 class="text-xl font-semibold mt-2">
-            Online-first became unavoidable
-          </h3>
-          <p class="mt-3 text-slate-600">
-            Programs had to work across geographies and maturity levels. This
-            forced an online-first approach long before it became mainstream.
+        <p class="text-lg text-slate-700 leading-relaxed mb-6">
+          The insight that mattered most: <em>at scale, one person can't help a thousand people.</em> Online platforms like AngelList and Product Hunt had figured out how to create value for thousands without a human in the loop for every interaction. We hadn't. We were running an artisanal service and calling it a platform.
+        </p>
+        <p class="text-lg text-slate-700 leading-relaxed">
+          That diagnosis was the beginning of the digital pivot. We were going to stop running a physical incubator and build an actual product.
+        </p>
+      </section>
+
+      <!-- Chapter 3 -->
+      <section class="pt-12 border-t border-slate-200 mb-16">
+        <p class="text-xs font-bold tracking-[0.2em] uppercase text-slate-400 mb-4">Chapter 3 &middot; 2015&ndash;2017</p>
+        <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-8">SV.CO: The Digital Transformation</h2>
+
+        <p class="text-lg text-slate-700 leading-relaxed mb-6">
+          February 2015: we announced the shift. Physical operations would wind down. SV.CO would be our future—a web-only platform for student startups. We removed mobile apps, went pure web, and started building what would actually scale.
+        </p>
+
+        <p class="text-lg text-slate-700 leading-relaxed mb-6">
+          We built timelines for every startup. Created progression models (5/10/20/30 stages). Ran structured cohort programs—six-week cycles, weekly check-ins, submission-based progress. Experimented with pricing, selection, onboarding flows.
+        </p>
+
+        <blockquote class="bg-amber-50 border-l-4 border-slate-900 rounded-r-lg p-6 my-10">
+          <p class="text-lg italic text-slate-800 leading-relaxed">
+            "The moment we stopped asking 'what do startup founders need?' and started asking 'what do students building their first product actually need?'—everything became clearer."
+          </p>
+        </blockquote>
+
+        <p class="text-lg text-slate-700 leading-relaxed mb-6">
+          What do students need? They need someone to teach them how to build, not just tell them to build. They need structured progression. They need feedback loops. They need deadlines that mean something. We were learning what education at scale actually requires, one failed cohort at a time.
+        </p>
+
+        <p class="text-lg text-slate-700 leading-relaxed mb-6">
+          April 2016: SV.CO spun off as a private company. The team moved to Bangalore. We made a call: removed "Hustlers," went "Hackers only." Developer-focused from here on.
+        </p>
+      </section>
+
+      <!-- Chapter 4 -->
+      <section class="pt-12 border-t border-slate-200 mb-16">
+        <p class="text-xs font-bold tracking-[0.2em] uppercase text-slate-400 mb-4">Chapter 4 &middot; 2017</p>
+        <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-8">The Silicon Valley Trip That Changed the Question</h2>
+
+        <p class="text-lg text-slate-700 leading-relaxed mb-6">
+          In June 2017, we took a cohort of students to Silicon Valley. It was our third batch—fully designed program, structured visits to Google and Facebook, mentors from top companies. We promised to take one student per team. The whole SV team went (minus Vinu).
+        </p>
+
+        <!-- Photo grid: Valley trip -->
+        <div class="grid grid-cols-2 gap-3 my-10">
+          <img
+            src="/images/story/google-mountainview.jpg"
+            alt="At Google Mountain View campus"
+            class="w-full aspect-[4/3] rounded-lg border border-slate-200 object-cover"
+          />
+          <img
+            src="/images/story/facebook-hq.jpg"
+            alt="At Facebook headquarters"
+            class="w-full aspect-[4/3] rounded-lg border border-slate-200 object-cover"
+          />
+        </div>
+        <p class="text-sm text-slate-500 italic -mt-6 mb-10">
+          At Google and Facebook during the 2017 Silicon Valley program. These visits reshaped what we thought was possible to teach.
+        </p>
+
+        <p class="text-lg text-slate-700 leading-relaxed mb-6">
+          What I came back with wasn't enthusiasm—it was clarity about the gap. The Valley wasn't producing great founders because of incubators. It was producing them because the education system was building people who could actually make things. The skills came first. Everything else followed.
+        </p>
+
+        <p class="text-lg text-slate-700 leading-relaxed mb-6">
+          July 2017, post-trip: we sat down and generated massive clarity. November 2017: we penned it—"SV.CO Chapter 2." The complete pivot to skills, not startups. Developer skills specifically. Build real things. Ship code that runs.
+        </p>
+
+        <!-- Highlight box -->
+        <div class="bg-slate-900 text-white rounded-xl p-8 my-10">
+          <h3 class="text-xl font-bold mb-3">The question that unlocked everything</h3>
+          <p class="text-slate-300 leading-relaxed">
+            We stopped asking "how do we help students start startups?" and started asking "how do we help students become genuinely capable?" It seems small. It changed everything about what we built next.
           </p>
         </div>
 
-        <div class="rounded-xl border border-slate-200 p-6">
-          <span class="text-sm text-slate-400 font-medium">Iteration</span>
-          <h3 class="text-xl font-semibold mt-2">
-            The platform followed the pain
-          </h3>
-          <p class="mt-3 text-slate-600">
-            Every feature emerged from operational bottlenecks. Structure,
-            feedback loops, and progression were built to support delivery, not
-            vanity metrics.
+        <p class="text-lg text-slate-700 leading-relaxed">
+          December 2017: we communicated to all our users—we've switched to "Internet Product School." The startup narrative was over.
+        </p>
+      </section>
+
+      <!-- Chapter 5 -->
+      <section class="pt-12 border-t border-slate-200 mb-16">
+        <p class="text-xs font-bold tracking-[0.2em] uppercase text-slate-400 mb-4">Chapter 5 &middot; 2018</p>
+        <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-8">Real Experiments, Honest Failures</h2>
+
+        <p class="text-lg text-slate-700 leading-relaxed mb-6">
+          2018 was the most operationally intensive year. We were running multiple experiments simultaneously, testing different models against real students, and learning faster than we ever had—partly because we were failing faster than we ever had.
+        </p>
+
+        <p class="text-lg text-slate-700 leading-relaxed mb-6">
+          <strong>February 2018: The Big Review.</strong> Vishnu resigned (first time). We wrote the Founders' Personals doc. Strategic Review doc. Deep introspection. The proposal was clear: going "Developer Only." Hari made a pitch deck (still valid in 2021). We were finally giving up the startup story completely.
+        </p>
+
+        <p class="text-lg text-slate-700 leading-relaxed mb-6">
+          <strong>April: Hackkar.</strong> Our experiment in developer hiring. The thesis: help good developers from tier 2/3 colleges demonstrate skills and connect to companies. We ran it, got traction, learned what students valued and what companies wanted. We also learned the limits: small companies need students year-round; students graduate once. Big companies have their own hiring methods that work. Experiment closed by October.
+        </p>
+
+        <p class="text-lg text-slate-700 leading-relaxed mb-6">
+          <strong>June: Apple iOS School @ Manipal.</strong> Our first university-integrated offering. Second executed university agreement (after GLS). Credit-integrated model. Students could take our course as an elective. This model worked. We'd build on this.
+        </p>
+
+        <p class="text-lg text-slate-700 leading-relaxed mb-6">
+          <strong>August: Facebook VR Partnership.</strong> Facebook wanted to build VR skills among Indian students. School of Innovation program. Fully Facebook-funded. We built the Coach Dashboard for external faculty. Ran it across multiple batches.
+        </p>
+
+        <!-- Photo: College Scenes -->
+        <figure class="my-10 -mx-4 md:mx-0">
+          <img
+            src="/images/story/college-scenes.jpg"
+            alt="University partnership sessions with students"
+            class="w-full aspect-video rounded-xl border border-slate-200 object-cover"
+          />
+          <figcaption class="text-sm text-slate-500 mt-3 px-4 md:px-0 italic">
+            University partnerships in action. The experience taught us that mission alignment matters more than the size of the funder.
+          </figcaption>
+        </figure>
+
+        <p class="text-lg text-slate-700 leading-relaxed mb-6">
+          What we learned: when the funder doesn't own the mission, things drift. Facebook had no deep vision for what Indian students should do with VR. They didn't want content open-sourced. They didn't want deep university integration. We delivered something reasonable that we couldn't build on.
+        </p>
+
+        <p class="text-lg text-slate-700 leading-relaxed mb-6">
+          The contrast was <strong>Freshworks</strong>. When Freshworks partnered for SaaS developer programs (Sastra University integration), they came with genuine ownership. They wanted curriculum open-sourced. They wanted students who could actually build. The alignment was real, and the programs worked.
+        </p>
+
+        <p class="text-lg text-slate-700 leading-relaxed">
+          Mission alignment isn't a soft requirement. It's an operational one. We learned this the hard way.
+        </p>
+      </section>
+
+      <!-- Chapter 6 -->
+      <section class="pt-12 border-t border-slate-200 mb-16">
+        <p class="text-xs font-bold tracking-[0.2em] uppercase text-slate-400 mb-4">Chapter 6 &middot; 2018&ndash;2021</p>
+        <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-8">Pupilfirst: The Platform Emerges</h2>
+
+        <p class="text-lg text-slate-700 leading-relaxed mb-6">
+          November-December 2018: we had a realization. The platform we'd built—cohort management, submission tracking, feedback loops, progression logic, curriculum system—was comparable to Teachable.com (valued at $100M+). We could separate the SV.CO brand from the underlying framework and turn it into SaaS.
+        </p>
+
+        <p class="text-lg text-slate-700 leading-relaxed mb-6">
+          <strong>December 5, 2018:</strong> pupilfirst.com domain registered.
+        </p>
+
+        <p class="text-lg text-slate-700 leading-relaxed mb-6">
+          January-March 2019: we built the school administration interface. Replaced the ActiveAdmin backend. Elevated admin features to first-class (not just backend tools). Built for third-party clients. First large-scale use of ReasonML & ReasonReact.
+        </p>
+
+        <p class="text-lg text-slate-700 leading-relaxed mb-6">
+          <strong>June 27, 2019:</strong> Major milestone. 316 commits merged to master in a single day. Student dashboard replacement complete. New curriculum interface launched—moved from simple targets to rich content blocks (WordPress Gutenberg / Medium editor style). Admins could now create large, rich documents for students to work through.
+        </p>
+
+        <p class="text-lg text-slate-700 leading-relaxed mb-6">
+          By 2020, we'd stopped thinking about ourselves as just a program provider. We were thinking about whether we could actually change how education works—not just serve the students who found us, but change the system everyone goes through.
+        </p>
+
+        <p class="text-lg text-slate-700 leading-relaxed mb-6">
+          The pandemic made one thing suddenly obvious: online-first wasn't an experiment anymore. It was the only way. And we'd been building online-first for years before it was necessary. That gave us something real.
+        </p>
+
+        <p class="text-lg text-slate-700 leading-relaxed mb-6">
+          We open-sourced the Pupilfirst platform. The curriculum. The infrastructure. Everything we'd built for delivery. Not as an upsell. As a principle. Knowledge shouldn't be locked in proprietary systems.
+        </p>
+
+        <p class="text-lg text-slate-700 leading-relaxed">
+          We also learned that education isn't just a curriculum problem. It's a policy problem, a teacher incentive problem, a stakeholder alignment problem, and a delivery problem—all at once. AICTE conversations, CBSE programs, national-level partnerships: we were trying to understand not just how to deliver better education to the students who found us, but how to make the system work better for everyone.
+        </p>
+      </section>
+
+      <!-- Chapter 7 -->
+      <section class="pt-12 border-t border-slate-200 mb-16">
+        <p class="text-xs font-bold tracking-[0.2em] uppercase text-slate-400 mb-4">Chapter 7 &middot; 2021&ndash;2024</p>
+        <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-8">The Split & The Second Design</h2>
+
+        <p class="text-lg text-slate-700 leading-relaxed mb-6">
+          By 2021, I'd been at this for nine years. I remained a co-founder of Pupilfirst (still am), but vision differences with the primary co-founder meant I needed to explore a different path. The mission remained—fixing higher education at scale—but the approach diverged.
+        </p>
+
+        <p class="text-lg text-slate-700 leading-relaxed mb-6">
+          <strong>January 2022:</strong> I partnered with Dr. Aruna Krishnamoorthy (former Harvard lecturer, astrophysicist, 7+ years teaching STEM). We launched HowToCBC—riding the "Cohort-Based Courses" wave. Teaching edupreneurs how to design and launch transformative learning experiences.
+        </p>
+
+        <p class="text-lg text-slate-700 leading-relaxed mb-6">
+          The results came quickly. Students launched courses and made money. Our alumni included UN executives, hedge fund partners, corporate trainers, startup founders across the world. Perfect 10/10 rating for our 2-week course. Selected to Maven Accelerator (top 75 from 2,000+ applicants). First self-organized student meetup happened in Buenos Aires.
+        </p>
+
+        <p class="text-lg text-slate-700 leading-relaxed mb-6">
+          <strong>October 2023:</strong> We'd outgrown "HowToCBC." The cohort-based course wave didn't go mainstream. But our ambitions had expanded—we wanted to work across all education, not just CBCs.
+        </p>
+
+        <p class="text-lg text-slate-700 leading-relaxed mb-6">
+          <strong>March 2024:</strong> Rebranded to <strong>The Second Design</strong>. Philosophy: "First iteration is a shitty first draft. Second iteration is where design shows." We positioned as an education design studio—working with businesses, colleges, nonprofits to design transformative learning experiences.
+        </p>
+
+        <p class="text-lg text-slate-700 leading-relaxed mb-6">
+          Track record by this point: 1,500+ learners, 100+ sessions, clients including McDonald's, IMG Academy, Glovo, FOSS United, ed-tech unicorns.
+        </p>
+
+        <p class="text-lg text-slate-700 leading-relaxed mb-6">
+          <strong>The Second Design's flagship program: RealWorldReady.</strong>
+        </p>
+
+        <p class="text-lg text-slate-700 leading-relaxed mb-6">
+          This is where everything I'd learned came together. Not about startups. Not about developer skills. About <em>agency</em>. Teaching students how to create opportunities instead of waiting for them. Systems thinking for careers. Practice-heavy sessions where students actually ship work, not just listen.
+        </p>
+
+        <div class="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-6 my-10">
+          <p class="text-sm font-semibold text-blue-900 mb-2">RealWorldReady Outcomes:</p>
+          <p class="text-sm text-blue-800">
+            <strong>63% rated sessions 10/10.</strong> Students reported clarity on goals, confidence to act without perfect plans, improved communication and collaboration. Not lectures—real transformation through practice.
           </p>
         </div>
 
-        <div class="rounded-xl border border-slate-200 p-6">
-          <span class="text-sm text-slate-400 font-medium">Open source</span>
-          <h3 class="text-xl font-semibold mt-2">
-            Transparency over control
-          </h3>
-          <p class="mt-3 text-slate-600">
-            The core was made open-source to allow adaptation, scrutiny, and long
-            term trust. Self-hosting was a principle, not an upsell.
-          </p>
+        <p class="text-lg text-slate-700 leading-relaxed mb-6">
+          30+ sessions developed: Shitty First Drafts (overcome perfectionism), Understanding Agency (create vs wait), Navigating Your Future (post-college paralysis), System Design (career patterns). Delivered to engineering colleges, developer communities, youth nonprofits.
+        </p>
+
+        <p class="text-lg text-slate-700 leading-relaxed">
+          The pedagogy was tested. The outcomes were proven. But to scale to millions—I needed infrastructure. I needed funding. I needed to go back to the platform layer.
+        </p>
+      </section>
+
+      <!-- Chapter 8 -->
+      <section class="pt-12 border-t border-slate-200 mb-16">
+        <p class="text-xs font-bold tracking-[0.2em] uppercase text-slate-400 mb-4">Chapter 8 &middot; Now</p>
+        <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-8">Why EduMyna Exists</h2>
+
+        <p class="text-lg text-slate-700 leading-relaxed mb-6">
+          After 12 years, here's what I know works:
+        </p>
+
+        <ul class="space-y-3 mb-8">
+          <li class="flex items-start gap-3">
+            <span class="text-blue-600 mt-1">✓</span>
+            <span class="text-slate-700"><strong>The infrastructure exists.</strong> Pupilfirst LMS—proven, university-deployed, open-source-able.</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-blue-600 mt-1">✓</span>
+            <span class="text-slate-700"><strong>The pedagogy is tested.</strong> RealWorldReady outcomes show what works: practice-heavy, agency-focused, real transformation.</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-blue-600 mt-1">✓</span>
+            <span class="text-slate-700"><strong>The partnerships are proven.</strong> Facebook, Apple, Freshworks, 4 state governments, multiple universities.</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-blue-600 mt-1">✓</span>
+            <span class="text-slate-700"><strong>The mission is unchanged.</strong> Help others enable themselves. Same goal since 2009.</span>
+          </li>
+        </ul>
+
+        <p class="text-lg text-slate-700 leading-relaxed mb-6">
+          <strong>EduMyna is the integration of all these learnings.</strong>
+        </p>
+
+        <div class="bg-slate-50 rounded-xl p-6 border border-slate-200 my-10">
+          <h3 class="font-bold text-slate-900 mb-4">What EduMyna Does:</h3>
+          <ul class="space-y-2 text-sm text-slate-700">
+            <li class="flex items-start gap-2">
+              <span class="text-blue-600 mt-0.5">→</span>
+              <span><strong>EduMyna LMS:</strong> Fork Pupilfirst, open-source it, let universities self-host</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-blue-600 mt-0.5">→</span>
+              <span><strong>Fund The Second Design:</strong> Run RealWorldReady programs at scale</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-blue-600 mt-0.5">→</span>
+              <span><strong>Student Acquisition:</strong> Marketing engine to bring learners to programs</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-blue-600 mt-0.5">→</span>
+              <span><strong>New Tech Products:</strong> Tools needed for education at scale</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-blue-600 mt-0.5">→</span>
+              <span><strong>Policy Work:</strong> Interventions to fix systemic issues</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-blue-600 mt-0.5">→</span>
+              <span><strong>Government Partnerships:</strong> State & national level collaboration</span>
+            </li>
+          </ul>
         </div>
 
-        <div class="md:col-span-2 rounded-xl border border-slate-200 p-6 bg-slate-50">
-          <span class="text-sm text-slate-400 font-medium">Today</span>
-          <h3 class="text-xl font-semibold mt-2">
-            EduMyna
-          </h3>
-          <p class="mt-3 text-slate-600 max-w-3xl">
-            EduMyna is the consolidation of these learnings into a platform for
-            people running real programs. It optimizes for clarity, iteration,
-            and responsibility rather than growth-at-any-cost.
+        <p class="text-lg text-slate-700 leading-relaxed mb-6">
+          Every feature exists because I hit an operational wall somewhere in the past twelve years and had to build something to get through it. Cohort management with real deadlines—because I ran programs where students drifted and there was nothing to catch them. Submission tracking with feedback loops—because I watched good students lose momentum between check-ins. Structured progression—because I saw what happened when learners had content but no path. Open-source by default—because I spent years watching knowledge get locked in platforms that benefited the vendor more than the learner.
+        </p>
+
+        <blockquote class="bg-amber-50 border-l-4 border-slate-900 rounded-r-lg p-6 my-10">
+          <p class="text-lg italic text-slate-800 leading-relaxed">
+            "I'm not trying to disrupt education. I'm trying to give the people actually running programs—the educators who already know what good looks like—the operational infrastructure to do it at scale."
           </p>
+        </blockquote>
+
+        <p class="text-lg text-slate-700 leading-relaxed mb-6">
+          There are still 200 million young Indians who need better education. The system is still broken. EduMyna is my attempt to take everything I've learned and build the platform + programs that can actually reach them.
+        </p>
+
+        <p class="text-lg text-slate-700 leading-relaxed font-medium text-slate-900">
+          I didn't start this journey 12 years ago. I'm continuing it.
+        </p>
+      </section>
+
+      <!-- Timeline -->
+      <section class="pt-12 border-t border-slate-200 mb-16">
+        <h2 class="text-2xl font-bold text-slate-900 mb-8">The Full Journey</h2>
+
+        <div class="relative pl-16 md:pl-20">
+          <div class="absolute left-6 md:left-8 top-2 bottom-2 w-0.5 bg-slate-200"></div>
+
+          <div class="relative mb-8">
+            <div class="absolute -left-10 md:-left-12 top-1 w-10 h-10 rounded-full bg-white border-2 border-slate-900 flex items-center justify-center text-xs font-bold text-slate-900">09</div>
+            <p class="text-xs font-bold tracking-wider uppercase text-slate-400">2009-2012</p>
+            <p class="font-semibold text-slate-900 mt-1">Startup Village, Kochi</p>
+            <p class="text-sm text-slate-500">India's first PPP incubator. 500 startups, 3,139 jobs, ₹45Cr raised. Mission-driven from day one.</p>
+          </div>
+
+          <div class="relative mb-8">
+            <div class="absolute -left-10 md:-left-12 top-1 w-10 h-10 rounded-full bg-white border-2 border-slate-900 flex items-center justify-center text-xs font-bold text-slate-900">15</div>
+            <p class="text-xs font-bold tracking-wider uppercase text-slate-400">2015-2017</p>
+            <p class="font-semibold text-slate-900 mt-1">SV.CO: The Digital Pivot</p>
+            <p class="text-sm text-slate-500">Web-only platform. Student startups only. Structured cohorts. Learning what education at scale requires.</p>
+          </div>
+
+          <div class="relative mb-8">
+            <div class="absolute -left-10 md:-left-12 top-1 w-10 h-10 rounded-full bg-white border-2 border-slate-900 flex items-center justify-center text-xs font-bold text-slate-900">17</div>
+            <p class="text-xs font-bold tracking-wider uppercase text-slate-400">2017</p>
+            <p class="font-semibold text-slate-900 mt-1">Skills, Not Startups</p>
+            <p class="text-sm text-slate-500">Silicon Valley trip crystallizes pivot. Shift to developer skills. Complete departure from startup narrative.</p>
+          </div>
+
+          <div class="relative mb-8">
+            <div class="absolute -left-10 md:-left-12 top-1 w-10 h-10 rounded-full bg-white border-2 border-slate-900 flex items-center justify-center text-xs font-bold text-slate-900">18</div>
+            <p class="text-xs font-bold tracking-wider uppercase text-slate-400">2018</p>
+            <p class="font-semibold text-slate-900 mt-1">Experiments: Hackkar, Facebook, Apple, Freshworks</p>
+            <p class="text-sm text-slate-500">Multiple partnerships. University integration. Learning mission alignment matters operationally.</p>
+          </div>
+
+          <div class="relative mb-8">
+            <div class="absolute -left-10 md:-left-12 top-1 w-10 h-10 rounded-full bg-white border-2 border-slate-900 flex items-center justify-center text-xs font-bold text-slate-900">19</div>
+            <p class="text-xs font-bold tracking-wider uppercase text-slate-400">2018-2021</p>
+            <p class="font-semibold text-slate-900 mt-1">Pupilfirst Platform Emerges</p>
+            <p class="text-sm text-slate-500">LMS built, open-sourced. University deployments. Comparable to $100M+ platforms.</p>
+          </div>
+
+          <div class="relative mb-8">
+            <div class="absolute -left-10 md:-left-12 top-1 w-10 h-10 rounded-full bg-white border-2 border-slate-900 flex items-center justify-center text-xs font-bold text-slate-900">22</div>
+            <p class="text-xs font-bold tracking-wider uppercase text-slate-400">2022-2024</p>
+            <p class="font-semibold text-slate-900 mt-1">The Second Design & RealWorldReady</p>
+            <p class="text-sm text-slate-500">Vision divergence. New partner (Dr. Aruna). Testing pedagogy. 1,500+ learners, 63% rated 10/10.</p>
+          </div>
+
+          <div class="relative">
+            <div class="absolute -left-10 md:-left-12 top-1 w-10 h-10 rounded-full bg-slate-900 border-2 border-slate-900 flex items-center justify-center text-xs font-bold text-white">E</div>
+            <p class="text-xs font-bold tracking-wider uppercase text-slate-400">Now</p>
+            <p class="font-semibold text-slate-900 mt-1">EduMyna</p>
+            <p class="text-sm text-slate-500">The integration. Infrastructure + pedagogy + partnerships. Built to scale to millions.</p>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      <!-- CTA -->
+      <section class="bg-slate-900 text-white rounded-2xl p-10 text-center mt-16">
+        <h3 class="text-2xl font-bold mb-4">This Is Just the Beginning</h3>
+        <p class="text-slate-300 max-w-md mx-auto mb-8">
+          EduMyna is raising funding to take these learnings to millions of students. If you're an investor, partner, or someone who believes education can be better—let's talk.
+        </p>
+        <div class="flex gap-3 justify-center flex-wrap">
+          <a href="/contact" class="bg-white text-slate-900 px-6 py-3 rounded-lg font-semibold text-sm hover:bg-slate-100 transition">Get in Touch →</a>
+          <a href="/founder-story" class="border border-white/20 text-white px-6 py-3 rounded-lg font-medium text-sm hover:bg-white/10 transition">About Gautam</a>
+        </div>
+      </section>
+
+    </article>
   </Container>
+
 </Layout>
