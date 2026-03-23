@@ -551,7 +551,7 @@ The question is: **"How many students can we reach with the right funding?"**
 
 **Contact:**
 Gautam
-Email: [your email]
+Email: gautham@edumyna.com
 Website: edumyna.com
 Story: edumyna.com/story
 Founder: edumyna.com/founder-story

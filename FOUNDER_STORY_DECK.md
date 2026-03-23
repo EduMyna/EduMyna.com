@@ -473,7 +473,7 @@ Founder, EduMyna
 Previously: Startup Village, SV.CO, Pupilfirst, The Second Design
 12 years building education. Now scaling it to millions.
 
-**Contact:** [Your email/contact]
+**Contact:** gautham@edumyna.com
 **Learn more:** edumyna.com/story
 
 ---
