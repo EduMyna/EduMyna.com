@@ -100,6 +100,10 @@
 - **Video - "A Company that Mentors Young Entrepreneurs | A 'school' for startups - Startup Village"**
   - YouTube: https://www.youtube.com/watch?v=LCsQ68plQos
   - Facebook: https://www.facebook.com/story.php?story_fbid=1234205526639360&id=417921431601111&_rdr
+- **Additional Coverage:**
+  - Silicon India: https://www.siliconindia.com/shownews/www.siliconindia.com/shownews/indias-first-startup-village-at-kochi-nid-103361-cid-100.html
+  - The News Minute: https://www.thenewsminute.com/news/kochi-startup-village-countrys-best-46936
+  - India Science & Technology Portal: https://www.indiascienceandtechnology.gov.in/innovations/incubators/startup-village-kochi
 
 ---
 
@@ -206,6 +210,12 @@
 **Media Coverage:**
 - **Times of India - "SV.CO: World's First Online Incubator for Students Rolls Out Batch with 32 Teams"**
   - https://timesofindia.indiatimes.com/city/kochi/sv-co-worlds-first-online-incubator-for-students-rolls-out-batch-with-32-teams/articleshow/56491170.cms
+- **Additional SV.CO Coverage:**
+  - YourStory - "Startup Village gets makeover, becomes World's first digital incubator": https://yourstory.com/2016/07/startup-village
+  - The Better India - "World's First Digital Student Incubator to Reach 5 Million Students": https://thebetterindia.com/61810/startup-village-entrepreneurs-sv-co/
+  - e27 - "World's first digital incubator for students SV.CO aims to connect all of India to Silicon Valley": https://e27.co/worlds-first-digital-incubator-for-students-sv-co-aims-to-reach-all-pin-codes-in-india-20160725/
+  - Business Standard - "Digital student incubator, claimed as world's 1st, goes online": https://www.business-standard.com/article/pti-stories/digital-student-incubator-claimed-as-world-s-1st-goes-online-116071400413_1.html
+  - Medium - "Scaling Startup Village: The SV.CO Story!": https://medium.com/sv-co-blog/scaling-startup-village-the-sv-co-story-b5d033ccbdd1
 
 ---
 
@@ -283,6 +293,10 @@
 
 **Platform Reference:**
 - Live platform example: https://rocket.pupilfirst.org/rocket
+- GitHub (Open Source): https://github.com/pupilfirst/pupilfirst
+- Official Site: https://www.pupilfirst.org/
+- LMS Documentation: https://docs.pupilfirst.com/
+- Story Page: https://www.pupilfirst.org/story
 
 ---
 
