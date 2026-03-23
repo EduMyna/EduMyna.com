@@ -175,7 +175,7 @@ How do we make the system work better for everyone, not just the students who fi
 **2021:** Vision differences with Pupilfirst co-founder
 I remained co-founder, but needed to explore a different path.
 
-**January 2022:** Partnered with **Dr. Aruna Krishnamoorthy**
+**January 2022:** Partnered with **Dr. Aruna Kesavan**
 - Former Harvard lecturer
 - Astrophysicist
 - 7+ years teaching STEM

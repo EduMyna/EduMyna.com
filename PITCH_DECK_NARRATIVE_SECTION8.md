@@ -351,7 +351,7 @@ Mission over metrics. Revenue for sustainability. Open-source for trust.
 
 ---
 
-### Dr. Aruna Krishnamoorthy - Partner (The Second Design)
+### Dr. Aruna Kesavan - Partner (The Second Design)
 
 **Academic Credibility:**
 - Former Harvard University lecturer

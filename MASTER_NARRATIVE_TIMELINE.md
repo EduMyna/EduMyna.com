@@ -317,8 +317,16 @@
 
 ### January 2022: HowToCBC Launch
 
-**New Venture:** Gautam + Dr. Aruna Krishnamoorthy
-- **Aruna:** Former Harvard lecturer, astrophysicist, 7+ years STEM teaching (US & India)
+**New Venture:** Gautam + Dr. Aruna Kesavan
+- **Aruna Kesavan, PhD (Cosmologist):**
+  - Post Doc & Lecturer at Harvard University ([CMSA](https://cmsa.fas.harvard.edu/post-docs/previous-postdocs/))
+  - PhD from Penn State University ([2016 Peter Clay Eklund Lecturing Award](https://sites.psu.edu/sofo/2018/02/04/aruna-kesavan-and-mark-dellostritto-won-the-2016-peter-clay-eklund-lecturing-award/))
+  - MSc Hons Physics & MSc Hons Mathematics from BITS Pilani
+  - Goodwill Ambassador for the Department of Family Welfare (2004), Govt of India
+  - All India Rank 1 in CBSE 12th grade examination (AISCE)
+  - Astrophysicist with educational experiences: BITS Pilani, TIFR, RRI, Penn State, Harvard
+  - **15+ years teaching experience** in high school and college physics and mathematics
+  - Studied and implemented evidence-based teaching and pedagogy for **10,000+ students**
 - **Gautam:** 9 years education entrepreneurship experience
 
 **Focus:** Riding the "Cohort-Based Courses" wave
@@ -539,6 +547,9 @@ Located in: `/Users/gauthamgautham/Downloads/SV Story - Claude Code/Public Folde
 - Product School branding
 - Campaign materials
 - Various event photos (73+ images total)
+
+**TODO - Photos to Add:**
+- Aruna Kesavan professional headshot (to be uploaded)
 
 ---
 
