@@ -93,6 +93,14 @@
 - Could only provide meaningful value to **student startups**
 - Decided in Jan 2015: "student startups only"
 
+**Media Coverage:**
+- **2013 - BBC Coverage:**
+  - https://www.bbc.com/news/business-22205601
+  - https://www.bbc.com/news/av/business-22210389
+- **Video - "A Company that Mentors Young Entrepreneurs | A 'school' for startups - Startup Village"**
+  - YouTube: https://www.youtube.com/watch?v=LCsQ68plQos
+  - Facebook: https://www.facebook.com/story.php?story_fbid=1234205526639360&id=417921431601111&_rdr
+
 ---
 
 ### 2014: Technology Transition Begins
@@ -154,6 +162,19 @@
 **Engineering:**
 - **Third team:** Vishnu, Hari, Jaleel, Mahesh, Vinu, Bodhi
 
+**Major Recognition - Ranked #1 Incubator in India:**
+- **Media Coverage:**
+  - Financial Express: https://www.financialexpress.com/industry/kochi-startup-village-countrys-best/325625/
+  - Business Standard: https://www.business-standard.com/article/pti-stories/kerala-s-startup-village-ranked-india-s-best-incubator-116072201221_1.html
+  - SV.CO Blog: https://blog.sv.co/startup-village-ranked-1-amongst-indian-incubators-b78b5b281572
+
+**Going Completely Digital - Media Coverage:**
+- **Economic Times Interview (Startup Village COO talks about going completely digital):**
+  - Article: https://economictimes.indiatimes.com/et-now/tech/startup-village-coo-talks-about-going-completely-digital/videoshow/53161490.cms
+  - YouTube (User copy): https://youtu.be/2mfgd6LjWNA
+  - YouTube (Alt): https://www.youtube.com/watch?v=H1kClGNav-0
+  - YouTube (Original): https://www.youtube.com/watch?v=k_0fF0jTb1Y
+
 ---
 
 ### 2017: Silicon Valley & Product School
@@ -181,6 +202,10 @@
 
 **Partnerships:**
 - Freshworks School of Alpha SaaS - Silicon Valley batch
+
+**Media Coverage:**
+- **Times of India - "SV.CO: World's First Online Incubator for Students Rolls Out Batch with 32 Teams"**
+  - https://timesofindia.indiatimes.com/city/kochi/sv-co-worlds-first-online-incubator-for-students-rolls-out-batch-with-32-teams/articleshow/56491170.cms
 
 ---
 
@@ -217,6 +242,8 @@
 - Fully Facebook-funded
 - Built Coach Dashboard for external faculty
 - First enterprise-sponsored program iteration
+- **Media Coverage:**
+  - Times of India: https://timesofindia.indiatimes.com/business/india-business/sv-co-facebook-to-partner-with-academia-for-tech-training/articleshow/62058516.cms
 
 **August 27 - Sept 9, 2018:** Silicon Valley Visit #2
 
@@ -253,6 +280,9 @@
 - Moved from simple targets (description + embeds + files)
 - To rich content blocks (WordPress Gutenberg / Medium editor style)
 - Enabled admins to create large, rich documents
+
+**Platform Reference:**
+- Live platform example: https://rocket.pupilfirst.org/rocket
 
 ---
 
