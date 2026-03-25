@@ -1,0 +1,157 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Container from "@/components/container.astro";
+import { readFileSync } from 'fs';
+import { resolve } from 'path';
+import { Marked } from 'marked';
+
+// Read and parse the markdown file
+const markdownPath = resolve('./MASTER_NARRATIVE_TIMELINE.md');
+const markdownContent = readFileSync(markdownPath, 'utf-8');
+
+// Simple markdown to HTML conversion (basic)
+// For production, you'd use a proper markdown parser
+const htmlContent = markdownContent
+  .split('\n')
+  .map(line => {
+    // Headers
+    if (line.startsWith('# ')) return `<h1>${line.slice(2)}</h1>`;
+    if (line.startsWith('## ')) return `<h2>${line.slice(3)}</h2>`;
+    if (line.startsWith('### ')) return `<h3>${line.slice(4)}</h3>`;
+    if (line.startsWith('#### ')) return `<h4>${line.slice(5)}</h4>`;
+
+    // Bold
+    line = line.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+
+    // Italic
+    line = line.replace(/\*(.+?)\*/g, '<em>$1</em>');
+
+    // Links
+    line = line.replace(/\[(.+?)\]\((.+?)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>');
+
+    // Code
+    line = line.replace(/`(.+?)`/g, '<code>$1</code>');
+
+    // Bullets
+    if (line.startsWith('- ')) return `<li>${line.slice(2)}</li>`;
+
+    // Horizontal rule
+    if (line === '---') return '<hr />';
+
+    // Paragraphs
+    if (line.trim() && !line.startsWith('<')) return `<p>${line}</p>`;
+
+    return line;
+  })
+  .join('\n');
+---
+
+<Layout
+  title="Master Narrative Timeline"
+  description="Complete 2009-2024 timeline with all metrics, partnerships, and evolution narrative - source of truth for all EduMyna content"
+>
+  <Container>
+    <div class="max-w-5xl mx-auto py-16 md:py-24">
+
+      <!-- Header -->
+      <div class="mb-12 pb-8 border-b border-slate-200">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-12 h-12 bg-slate-900 rounded-lg flex items-center justify-center text-white font-mono font-bold">
+            MD
+          </div>
+          <div>
+            <h1 class="text-3xl md:text-4xl font-bold text-slate-900">Master Narrative Timeline</h1>
+            <p class="text-slate-600">MASTER_NARRATIVE_TIMELINE.md</p>
+          </div>
+        </div>
+        <p class="text-lg text-slate-700">
+          Complete source of truth for all EduMyna content - website, pitch decks, blogs, about pages.
+          This is the raw markdown file rendered as a webpage for easy review.
+        </p>
+        <div class="mt-4 flex flex-wrap gap-3">
+          <a href="/story" class="text-sm font-semibold text-blue-600 hover:text-blue-700">
+            → View /story page
+          </a>
+          <a href="/evolution" class="text-sm font-semibold text-blue-600 hover:text-blue-700">
+            → View /evolution page
+          </a>
+          <a href="/links" class="text-sm font-semibold text-slate-600 hover:text-slate-700">
+            ← Back to links
+          </a>
+        </div>
+      </div>
+
+      <!-- Markdown Content -->
+      <article class="prose prose-slate prose-lg max-w-none
+        prose-headings:font-bold prose-headings:tracking-tight
+        prose-h1:text-4xl prose-h1:mb-6 prose-h1:border-b prose-h1:pb-4 prose-h1:border-slate-200
+        prose-h2:text-3xl prose-h2:mt-12 prose-h2:mb-6 prose-h2:border-b prose-h2:pb-3 prose-h2:border-slate-200
+        prose-h3:text-2xl prose-h3:mt-8 prose-h3:mb-4
+        prose-h4:text-xl prose-h4:mt-6 prose-h4:mb-3
+        prose-p:leading-relaxed prose-p:mb-4
+        prose-a:text-blue-600 prose-a:font-semibold prose-a:no-underline hover:prose-a:text-blue-700
+        prose-strong:text-slate-900 prose-strong:font-bold
+        prose-ul:my-6 prose-ul:list-disc prose-ul:pl-6
+        prose-ol:my-6 prose-ol:list-decimal prose-ol:pl-6
+        prose-li:my-2
+        prose-blockquote:border-l-4 prose-blockquote:border-slate-900 prose-blockquote:pl-6 prose-blockquote:italic prose-blockquote:text-slate-700
+        prose-code:bg-slate-100 prose-code:px-2 prose-code:py-1 prose-code:rounded prose-code:text-sm prose-code:font-mono prose-code:text-slate-800 prose-code:before:content-[''] prose-code:after:content-['']
+        prose-pre:bg-slate-900 prose-pre:text-slate-100 prose-pre:p-4 prose-pre:rounded-lg prose-pre:overflow-x-auto
+        prose-table:border-collapse prose-table:w-full prose-table:my-8
+        prose-th:bg-slate-900 prose-th:text-white prose-th:p-3 prose-th:text-left prose-th:font-bold
+        prose-td:border prose-td:border-slate-200 prose-td:p-3
+        prose-hr:my-12 prose-hr:border-slate-200
+      ">
+        <div set:html={htmlContent} />
+      </article>
+
+      <!-- Footer Navigation -->
+      <div class="mt-16 pt-8 border-t border-slate-200">
+        <div class="flex justify-between items-center">
+          <a href="/links" class="text-blue-600 hover:text-blue-700 font-semibold">
+            ← Back to Quick Links
+          </a>
+          <div class="text-sm text-slate-500">
+            Last updated: March 25, 2026
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </Container>
+</Layout>
+
+<style>
+  /* Additional markdown styling */
+  article :global(table) {
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+    border-radius: 0.5rem;
+    overflow: hidden;
+  }
+
+  article :global(tbody tr:hover) {
+    background-color: rgb(248 250 252);
+    transition: background-color 0.2s;
+  }
+
+  article :global(em) {
+    font-style: italic;
+    color: rgb(51 65 85);
+  }
+
+  /* Spacing adjustments */
+  article :global(h1 + p),
+  article :global(h2 + p),
+  article :global(h3 + p) {
+    margin-top: 1rem;
+  }
+
+  /* List wrapping */
+  article :global(ul) {
+    list-style-position: outside;
+  }
+
+  article :global(li) {
+    margin-bottom: 0.5rem;
+  }
+</style>
