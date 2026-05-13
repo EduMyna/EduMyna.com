@@ -1,25 +1,32 @@
 ---
 const stats = [
-  { number: "12+", label: "Years of education work" },
+  { number: "12+", label: "Years running education programs" },
   { number: "500+", label: "Students reached" },
   { number: "3", label: "Areas of work: programs, software, policy" },
-  { number: "1", label: "Flagship program in operation" },
+  { number: "2013", label: "The year it started" },
 ];
 ---
 
-<section class="bg-myna-amber">
-  <div class="max-w-7xl mx-auto px-5 sm:px-8 py-12">
-    <div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
+<section class="bg-myna-amber relative overflow-hidden">
+
+  <!-- Subtle dot pattern overlay -->
+  <div class="absolute inset-0 opacity-[0.06] pointer-events-none"
+    style="background-image: radial-gradient(circle, #1A1209 1px, transparent 1px); background-size: 24px 24px;">
+  </div>
+
+  <div class="relative max-w-7xl mx-auto px-5 sm:px-8 py-16 lg:py-20">
+    <div class="grid grid-cols-2 lg:grid-cols-4 divide-y divide-x-0 lg:divide-y-0 lg:divide-x divide-myna-black/15">
       {stats.map((stat) => (
-        <div class="text-center lg:text-left">
-          <div class="text-4xl lg:text-5xl font-bold text-myna-black tracking-tight">
+        <div class="px-5 sm:px-8 lg:px-10 py-8 lg:py-4 flex flex-col justify-center">
+          <div class="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-myna-black leading-none tracking-tighter">
             {stat.number}
           </div>
-          <div class="mt-1 text-sm font-medium text-myna-black/70 leading-snug">
+          <div class="mt-2 text-xs sm:text-sm font-semibold text-myna-black/60 leading-snug max-w-[140px]">
             {stat.label}
           </div>
         </div>
       ))}
     </div>
   </div>
+
 </section>

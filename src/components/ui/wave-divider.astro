@@ -1,0 +1,22 @@
+---
+interface Props {
+  fromColor: string;
+  toColor: string;
+  flip?: boolean;
+}
+const { fromColor, toColor, flip = false } = Astro.props;
+---
+
+<div class="relative w-full overflow-hidden leading-none" style={`background:${fromColor};`}>
+  <svg
+    viewBox="0 0 1440 90"
+    xmlns="http://www.w3.org/2000/svg"
+    preserveAspectRatio="none"
+    class="block w-full"
+    style={`height:90px; transform: ${flip ? "scaleY(-1)" : "none"};`}>
+    <path
+      d="M0,45 C180,90 360,0 540,45 C720,90 900,0 1080,45 C1260,90 1380,20 1440,45 L1440,90 L0,90 Z"
+      fill={toColor}
+    />
+  </svg>
+</div>

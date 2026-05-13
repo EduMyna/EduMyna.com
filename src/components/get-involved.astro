@@ -7,6 +7,8 @@ const paths = [
       "If you believe that what happens in the undergraduate years matters, and you want to spend your time on something that actually moves the needle — let's talk.",
     cta: "Talk to us",
     href: "/contact",
+    gradient: "from-myna-brown to-myna-black",
+    accentLine: "bg-myna-amber",
   },
   {
     number: "II",
@@ -15,6 +17,8 @@ const paths = [
       "Universities, governments, community organizations, nonprofits, private educational institutions. EduMyna works best embedded in existing ecosystems. If your mission and ours overlap, let's find out how.",
     cta: "Explore partnership",
     href: "/contact",
+    gradient: "from-myna-black to-myna-brown/60",
+    accentLine: "bg-myna-orange",
   },
   {
     number: "III",
@@ -23,12 +27,23 @@ const paths = [
       "EduMyna is registering as a Section 8 nonprofit. We are looking for early believers — people and institutions who understand that fixing higher education in India is among the most consequential and necessary things we can get right.",
     cta: "Discuss funding",
     href: "/contact",
+    gradient: "from-myna-brown/60 to-myna-black",
+    accentLine: "bg-myna-amber",
   },
 ];
 ---
 
-<section class="bg-myna-black border-t border-myna-brown/30">
-  <div class="max-w-7xl mx-auto px-5 sm:px-8 py-20 lg:py-28">
+<section class="bg-myna-black relative overflow-hidden">
+
+  <!-- Top decorative line -->
+  <div class="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-myna-amber/40 to-transparent"></div>
+
+  <!-- Background pattern -->
+  <div class="absolute inset-0 opacity-[0.03] pointer-events-none"
+    style="background-image: radial-gradient(circle, #F5A623 1px, transparent 1px); background-size: 32px 32px;">
+  </div>
+
+  <div class="relative max-w-7xl mx-auto px-5 sm:px-8 py-20 lg:py-28">
 
     <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8 mb-16">
       <div>
@@ -38,33 +53,47 @@ const paths = [
             Get involved
           </span>
         </div>
-        <h2 class="text-4xl lg:text-5xl font-bold text-myna-white tracking-tight leading-tight">
+        <h2 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-myna-white tracking-tight leading-tight">
           Three ways to be<br />part of this.
         </h2>
       </div>
-      <p class="text-sm text-myna-white/40 max-w-sm leading-relaxed lg:text-right">
-        EduMyna is early. That means the people who show up now
+      <p class="text-sm text-myna-white/35 max-w-sm leading-relaxed lg:text-right">
+        EduMyna is early. The people who show up now
         will shape what it becomes.
       </p>
     </div>
 
-    <div class="grid md:grid-cols-3 gap-px bg-myna-brown/20">
+    <div class="grid md:grid-cols-3 gap-6">
       {paths.map((p) => (
-        <div class="bg-myna-black p-8 lg:p-10 flex flex-col hover:bg-myna-brown/10 transition-colors duration-200">
-          <span class="text-5xl font-bold text-myna-brown/30 tracking-tight leading-none mb-8">
-            {p.number}
-          </span>
-          <h3 class="text-xl font-bold text-myna-white tracking-tight mb-4">
-            {p.title}
-          </h3>
-          <p class="text-sm text-myna-white/50 leading-relaxed flex-1">
-            {p.description}
-          </p>
-          <a
-            href={p.href}
-            class="mt-8 inline-flex items-center gap-1 text-sm font-bold uppercase tracking-widest text-myna-amber hover:text-myna-white transition-colors">
-            {p.cta} →
-          </a>
+        <div class:list={[
+          "group relative rounded-sm overflow-hidden flex flex-col bg-gradient-to-b",
+          p.gradient,
+        ]}>
+
+          <!-- Top accent line -->
+          <div class:list={["h-1 w-full", p.accentLine]}></div>
+
+          <div class="p-8 lg:p-10 flex flex-col flex-1">
+
+            <!-- Large number watermark -->
+            <div class="text-8xl font-bold text-myna-white/05 leading-none tracking-tight select-none mb-6">
+              {p.number}
+            </div>
+
+            <h3 class="text-2xl font-bold text-myna-white tracking-tight mb-4">
+              {p.title}
+            </h3>
+            <p class="text-sm text-myna-white/50 leading-relaxed flex-1">
+              {p.description}
+            </p>
+            <a
+              href={p.href}
+              class="mt-8 inline-flex items-center gap-2 text-sm font-bold uppercase tracking-widest text-myna-amber group-hover:text-myna-white transition-colors">
+              {p.cta}
+              <span class="transition-transform group-hover:translate-x-1">→</span>
+            </a>
+
+          </div>
         </div>
       ))}
     </div>

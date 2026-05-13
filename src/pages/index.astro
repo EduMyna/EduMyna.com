@@ -1,6 +1,7 @@
 ---
 import Layout from "@/layouts/Layout.astro";
 import Hero from "@/components/hero.astro";
+import WaveDivider from "@/components/ui/wave-divider.astro";
 import ImpactStats from "@/components/impact-stats.astro";
 import Programs from "@/components/programs.astro";
 import MissionStatement from "@/components/mission-statement.astro";
@@ -10,9 +11,15 @@ import GetInvolved from "@/components/get-involved.astro";
 <Layout
   title="Home"
   description="EduMyna is a nonprofit education initiative working in the gap between school and the world — funding programs, building tools, and shaping the discourse around India's undergraduate years.">
+
   <Hero />
+  <WaveDivider fromColor="#1A1209" toColor="#F5A623" />
   <ImpactStats />
+  <WaveDivider fromColor="#F5A623" toColor="#FAF7F2" />
   <Programs />
+  <WaveDivider fromColor="#FAF7F2" toColor="#1A1209" />
   <MissionStatement />
+  <WaveDivider fromColor="#1A1209" toColor="#1A1209" />
   <GetInvolved />
+
 </Layout>

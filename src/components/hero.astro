@@ -1,63 +1,145 @@
 ---
 ---
 
-<section class="relative overflow-hidden bg-myna-black">
+<section class="relative overflow-hidden bg-myna-black min-h-[92vh] flex items-center">
 
-  <!-- Background gradient — dark warm to brown -->
-  <div class="absolute inset-0 bg-gradient-to-br from-myna-black via-myna-black to-myna-brown/40 pointer-events-none"></div>
-
-  <!-- Decorative large faded "EM" -->
-  <div class="absolute right-0 top-1/2 -translate-y-1/2 text-[20rem] font-bold text-myna-brown/10 leading-none select-none pointer-events-none tracking-tighter pr-8 hidden lg:block">
-    EM
+  <!-- Radial amber glow top-right -->
+  <div class="absolute top-0 right-0 w-[700px] h-[700px] rounded-full pointer-events-none"
+    style="background: radial-gradient(circle at top right, rgba(245,166,35,0.18) 0%, rgba(245,166,35,0.06) 40%, transparent 70%);">
   </div>
 
-  <!-- Subtle dot pattern -->
-  <div class="absolute inset-0 opacity-[0.03] pointer-events-none"
-    style="background-image: radial-gradient(circle, #F5EFE0 1px, transparent 1px); background-size: 32px 32px;">
+  <!-- Radial brown glow bottom-left -->
+  <div class="absolute bottom-0 left-0 w-[500px] h-[500px] rounded-full pointer-events-none"
+    style="background: radial-gradient(circle at bottom left, rgba(107,58,42,0.3) 0%, transparent 70%);">
   </div>
 
-  <div class="relative max-w-7xl mx-auto px-5 sm:px-8 pt-20 pb-24 lg:pt-28 lg:pb-32">
+  <!-- Dot grid pattern -->
+  <div class="absolute inset-0 opacity-[0.04] pointer-events-none"
+    style="background-image: radial-gradient(circle, #F5EFE0 1px, transparent 1px); background-size: 28px 28px;">
+  </div>
 
-    <!-- Eyebrow -->
-    <div class="inline-flex items-center gap-2 mb-8">
-      <span class="h-px w-8 bg-myna-amber"></span>
-      <span class="text-xs font-bold uppercase tracking-widest text-myna-amber">
-        Education Initiative · India
-      </span>
+  <div class="relative max-w-7xl mx-auto px-5 sm:px-8 py-16 lg:py-24 w-full">
+    <div class="grid lg:grid-cols-2 gap-12 lg:gap-8 items-center">
+
+      <!-- Left: text -->
+      <div class="order-1">
+
+        <div class="inline-flex items-center gap-2 mb-8">
+          <span class="h-px w-8 bg-myna-amber"></span>
+          <span class="text-xs font-bold uppercase tracking-widest text-myna-amber">
+            Education Initiative · India
+          </span>
+        </div>
+
+        <h1 class="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold leading-[1.02] tracking-tight text-myna-white">
+          Nation<br />
+          builders<br />
+          are made,<br />
+          <span class="text-myna-amber">not born.</span>
+        </h1>
+
+        <p class="mt-8 text-lg sm:text-xl text-myna-white/60 max-w-xl leading-relaxed">
+          EduMyna works in the gap between leaving school and entering the world.
+          We fund programs, build tools, and shape the discourse around what
+          India's undergraduate years should mean.
+        </p>
+
+        <div class="mt-10 flex flex-col sm:flex-row gap-4">
+          <a
+            href="/story"
+            class="inline-flex items-center justify-center rounded-sm bg-myna-amber px-7 py-3.5 text-sm font-bold text-myna-black hover:bg-myna-amber-dark transition-colors tracking-wide uppercase">
+            See our programs
+          </a>
+          <a
+            href="/contact"
+            class="inline-flex items-center justify-center rounded-sm border border-myna-white/20 px-7 py-3.5 text-sm font-bold text-myna-white hover:border-myna-amber hover:text-myna-amber transition-colors tracking-wide uppercase">
+            Get involved
+          </a>
+        </div>
+
+        <p class="mt-10 text-xs text-myna-white/25 uppercase tracking-widest">
+          Running education programs since 2013
+        </p>
+
+      </div>
+
+      <!-- Right: Myna bird illustration — hidden on small screens -->
+      <div class="order-2 hidden md:flex items-center justify-center lg:justify-end">
+        <div class="relative w-80 h-80 lg:w-[440px] lg:h-[440px]">
+
+          <!-- Outer amber ring -->
+          <div class="absolute inset-0 rounded-full border border-myna-amber/10"></div>
+          <!-- Mid ring -->
+          <div class="absolute inset-8 rounded-full border border-myna-amber/15"></div>
+          <!-- Inner ring -->
+          <div class="absolute inset-16 rounded-full border border-myna-amber/20"></div>
+          <!-- Centre glow -->
+          <div class="absolute inset-12 rounded-full"
+            style="background: radial-gradient(circle, rgba(245,166,35,0.15) 0%, transparent 70%);">
+          </div>
+
+          <!-- Myna bird SVG -->
+          <svg
+            viewBox="0 0 400 420"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="absolute inset-0 w-full h-full drop-shadow-2xl"
+            aria-label="Indian Myna bird illustration">
+
+            <!-- Halo glow behind bird -->
+            <circle cx="210" cy="185" r="145" fill="#F5A623" opacity="0.07"/>
+            <circle cx="210" cy="185" r="100" fill="#F5A623" opacity="0.07"/>
+
+            <!-- Tail feathers -->
+            <path d="M 125 305 C 85 350 55 395 38 420 L 68 405 C 58 438 78 432 98 405 L 112 368 C 122 340 140 318 158 305 Z" fill="#1A1209"/>
+            <path d="M 145 315 C 112 355 88 398 75 420 L 102 408 C 95 438 112 434 128 410 L 138 375 C 146 348 160 326 172 315 Z" fill="#2C1A12"/>
+
+            <!-- Body -->
+            <ellipse cx="192" cy="258" rx="118" ry="87" transform="rotate(-10 192 258)" fill="#8B4F3A"/>
+
+            <!-- Body shadow/depth -->
+            <ellipse cx="175" cy="272" rx="90" ry="60" transform="rotate(-10 175 272)" fill="#6B3A2A" opacity="0.6"/>
+
+            <!-- Wing white patch -->
+            <ellipse cx="172" cy="238" rx="62" ry="36" transform="rotate(-18 172 238)" fill="#F5EFE0" opacity="0.80"/>
+            <!-- Wing feather detail lines -->
+            <path d="M 118 238 C 148 205 188 212 200 236" stroke="#F5EFE0" stroke-width="1.5" stroke-opacity="0.4" fill="none"/>
+            <path d="M 125 248 C 155 218 192 224 202 246" stroke="#F5EFE0" stroke-width="1" stroke-opacity="0.25" fill="none"/>
+
+            <!-- Neck -->
+            <ellipse cx="258" cy="178" rx="44" ry="55" fill="#6B3A2A"/>
+
+            <!-- Head -->
+            <circle cx="272" cy="122" r="70" fill="#1A1209"/>
+
+            <!-- Yellow eye-patch -->
+            <ellipse cx="305" cy="120" rx="22" ry="15" fill="#F5A623"/>
+            <!-- Eye -->
+            <circle cx="310" cy="118" r="8" fill="#1A1209"/>
+            <!-- Eye highlight -->
+            <circle cx="313" cy="115" r="3" fill="#F5EFE0" opacity="0.9"/>
+
+            <!-- Upper beak -->
+            <path d="M 328 110 C 342 106 368 112 372 120 C 358 123 330 120 328 115 Z" fill="#F5A623"/>
+            <!-- Lower beak -->
+            <path d="M 328 120 C 340 125 360 133 362 140 C 346 140 330 132 328 124 Z" fill="#D4891A"/>
+            <!-- Beak line -->
+            <path d="M 328 118 L 370 122" stroke="#1A1209" stroke-width="1" stroke-opacity="0.3"/>
+
+            <!-- Legs -->
+            <path d="M 188 337 L 180 372" stroke="#F5A623" stroke-width="5" stroke-linecap="round"/>
+            <path d="M 180 372 L 156 386 M 180 372 L 174 390 M 180 372 L 197 387" stroke="#F5A623" stroke-width="4" stroke-linecap="round"/>
+
+            <path d="M 218 345 L 211 375" stroke="#F5A623" stroke-width="5" stroke-linecap="round"/>
+            <path d="M 211 375 L 188 388 M 211 375 L 205 392 M 211 375 L 226 389" stroke="#F5A623" stroke-width="4" stroke-linecap="round"/>
+
+            <!-- Perch/branch hint -->
+            <path d="M 140 392 Q 200 385 270 395" stroke="#6B3A2A" stroke-width="6" stroke-linecap="round" opacity="0.5"/>
+
+          </svg>
+        </div>
+      </div>
+
     </div>
-
-    <!-- Headline -->
-    <h1 class="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold leading-[1.05] tracking-tight text-myna-white max-w-4xl">
-      Nation builders<br />
-      are made,<br />
-      <span class="text-myna-amber">not born.</span>
-    </h1>
-
-    <!-- Sub -->
-    <p class="mt-8 text-lg sm:text-xl text-myna-white/60 max-w-2xl leading-relaxed">
-      EduMyna works in the gap between leaving school and entering the world.
-      We fund programs, build tools, and shape the discourse around what
-      India's undergraduate years should mean.
-    </p>
-
-    <!-- CTAs -->
-    <div class="mt-10 flex flex-col sm:flex-row gap-4">
-      <a
-        href="/story"
-        class="inline-flex items-center justify-center rounded-sm bg-myna-amber px-7 py-3.5 text-sm font-bold text-myna-black hover:bg-myna-amber-dark transition-colors tracking-wide uppercase">
-        See our programs
-      </a>
-      <a
-        href="/contact"
-        class="inline-flex items-center justify-center rounded-sm border border-myna-white/20 px-7 py-3.5 text-sm font-bold text-myna-white hover:border-myna-amber hover:text-myna-amber transition-colors tracking-wide uppercase">
-        Get involved
-      </a>
-    </div>
-
-    <!-- Running since -->
-    <p class="mt-10 text-xs text-myna-white/30 uppercase tracking-widest">
-      Running education programs since 2013
-    </p>
-
   </div>
 </section>
