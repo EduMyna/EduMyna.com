@@ -1,56 +1,63 @@
 ---
-import { Picture } from "astro:assets";
-import heroImage from "@/assets/hero.png";
-import Link from "@/components/ui/link.astro";
-import { Icon } from "astro-icon/components";
-
-const GITHUB_REPO = "https://github.com/EduMyna/EduMyna";
 ---
 
-<main class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-12 md:pb-24">
-  <div class="py-6 md:order-1 hidden md:block">
-    <Picture
-      src={heroImage}
-      alt="EduMyna learning platform"
-      widths={[200, 400, 600]}
-      sizes="(max-width: 800px) 100vw, 620px"
-      loading="eager"
-      format="avif"
-    />
+<section class="relative overflow-hidden bg-myna-black">
+
+  <!-- Background gradient — dark warm to brown -->
+  <div class="absolute inset-0 bg-gradient-to-br from-myna-black via-myna-black to-myna-brown/40 pointer-events-none"></div>
+
+  <!-- Decorative large faded "EM" -->
+  <div class="absolute right-0 top-1/2 -translate-y-1/2 text-[20rem] font-bold text-myna-brown/10 leading-none select-none pointer-events-none tracking-tighter pr-8 hidden lg:block">
+    EM
   </div>
 
-  <div>
-    <h1 class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight xl:tracking-tighter">
-      Launch cohorts your students actually finish
+  <!-- Subtle dot pattern -->
+  <div class="absolute inset-0 opacity-[0.03] pointer-events-none"
+    style="background-image: radial-gradient(circle, #F5EFE0 1px, transparent 1px); background-size: 32px 32px;">
+  </div>
+
+  <div class="relative max-w-7xl mx-auto px-5 sm:px-8 pt-20 pb-24 lg:pt-28 lg:pb-32">
+
+    <!-- Eyebrow -->
+    <div class="inline-flex items-center gap-2 mb-8">
+      <span class="h-px w-8 bg-myna-amber"></span>
+      <span class="text-xs font-bold uppercase tracking-widest text-myna-amber">
+        Education Initiative · India
+      </span>
+    </div>
+
+    <!-- Headline -->
+    <h1 class="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold leading-[1.05] tracking-tight text-myna-white max-w-4xl">
+      Nation builders<br />
+      are made,<br />
+      <span class="text-myna-amber">not born.</span>
     </h1>
 
-    <p class="text-lg mt-4 text-slate-600 max-w-xl">
-      Great courses don't just deliver content — they guide transformation. EduMyna gives you the tool suite to design learning experiences students actually show up for, engage with, and complete.
+    <!-- Sub -->
+    <p class="mt-8 text-lg sm:text-xl text-myna-white/60 max-w-2xl leading-relaxed">
+      EduMyna works in the gap between leaving school and entering the world.
+      We fund programs, build tools, and shape the discourse around what
+      India's undergraduate years should mean.
     </p>
 
-    <div class="mt-6 flex flex-col sm:flex-row gap-3">
-      <Link href="/#features" class="flex gap-1 items-center justify-center">
-        <Icon class="text-white w-5 h-5" name="bx:bxs-bolt" />
-        Explore features
-      </Link>
-
-      <Link size="lg" style="outline" href="/pricing" class="flex gap-1 items-center justify-center">
-        <Icon class="text-black w-4 h-4" name="bx:bxs-purchase-tag" />
-        See pricing
-      </Link>
-
+    <!-- CTAs -->
+    <div class="mt-10 flex flex-col sm:flex-row gap-4">
       <a
-        href={GITHUB_REPO}
-        target="_blank"
-        rel="noopener noreferrer"
-        class="inline-flex items-center justify-center gap-2 rounded-md border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50">
-        <Icon class="text-black w-4 h-4" name="bx:bxl-github" />
-        GitHub
+        href="/story"
+        class="inline-flex items-center justify-center rounded-sm bg-myna-amber px-7 py-3.5 text-sm font-bold text-myna-black hover:bg-myna-amber-dark transition-colors tracking-wide uppercase">
+        See our programs
+      </a>
+      <a
+        href="/contact"
+        class="inline-flex items-center justify-center rounded-sm border border-myna-white/20 px-7 py-3.5 text-sm font-bold text-myna-white hover:border-myna-amber hover:text-myna-amber transition-colors tracking-wide uppercase">
+        Get involved
       </a>
     </div>
 
-    <p class="mt-5 text-sm text-slate-500">
-      Self-host it for free, or use the hosted version if you want it managed.
+    <!-- Running since -->
+    <p class="mt-10 text-xs text-myna-white/30 uppercase tracking-widest">
+      Running education programs since 2013
     </p>
+
   </div>
-</main>
+</section>

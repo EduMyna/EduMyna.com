@@ -4,25 +4,38 @@
 
 @theme {
   --font-sans:
-    Bricolage Grotesque Variable, Inter Variable, Inter, ui-sans-serif,
+    'Bricolage Grotesque Variable', ui-sans-serif,
     system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
     'Segoe UI Symbol', 'Noto Color Emoji';
+
+  /* Indian Myna bird palette */
+  --color-myna-black:       #1A1209;   /* head — warm near-black */
+  --color-myna-brown:       #6B3A2A;   /* body — chocolate brown */
+  --color-myna-brown-mid:   #8B4F3A;   /* body highlight */
+  --color-myna-amber:       #F5A623;   /* beak — bright amber/gold */
+  --color-myna-amber-dark:  #D4891A;   /* beak hover */
+  --color-myna-orange:      #E8620A;   /* feet — burnt orange */
+  --color-myna-white:       #F5EFE0;   /* wing patches — warm off-white */
+  --color-myna-cream:       #FAF7F2;   /* light section backgrounds */
 }
 
-/*
-  The default border color has changed to `currentColor` in Tailwind CSS v4,
-  so we've added these compatibility styles to make sure everything still
-  looks the same as it did with Tailwind CSS v3.
-
-  If we ever want to remove these styles, we need to add an explicit border
-  color utility to any element that depends on these defaults.
-*/
 @layer base {
   *,
   ::after,
   ::before,
   ::backdrop,
   ::file-selector-button {
-    border-color: var(--color-gray-200, currentColor);
+    border-color: var(--color-myna-brown, currentColor);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-myna-black);
+    color: var(--color-myna-white);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 }

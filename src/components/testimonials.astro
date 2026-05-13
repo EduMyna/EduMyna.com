@@ -1,0 +1,46 @@
+---
+const quotes = [
+  {
+    quote:
+      "The approach EduMyna takes is exactly what the FOSS community needs — building learners who know how to think, not just what to think. The online delivery model is effective in a way most edtech isn't.",
+    name: "Sai Rahul Poruri",
+    role: "CEO, FOSS United",
+  },
+  {
+    quote:
+      "Working with EduMyna has shown us what happens when you design for transformation, not just completion. Students show up differently when someone actually believes in them.",
+    name: "Abid & Mehar",
+    role: "Founders, TinkerHub Foundation",
+  },
+];
+---
+
+<section class="bg-myna-black border-t border-myna-brown/30">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 py-20 lg:py-28">
+
+    <div class="inline-flex items-center gap-2 mb-12">
+      <span class="h-px w-8 bg-myna-amber"></span>
+      <span class="text-xs font-bold uppercase tracking-widest text-myna-amber">
+        Proof of work
+      </span>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-8">
+      {quotes.map((q) => (
+        <div class="border border-myna-brown/30 rounded-sm p-8 lg:p-10">
+          <p class="text-xl lg:text-2xl font-medium text-myna-white/90 leading-snug">
+            "{q.quote}"
+          </p>
+          <div class="mt-8 flex items-center gap-3">
+            <div class="h-px flex-1 bg-myna-brown/30"></div>
+            <div class="text-right">
+              <div class="text-sm font-bold text-myna-amber">{q.name}</div>
+              <div class="text-xs text-myna-white/40 mt-0.5">{q.role}</div>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+
+  </div>
+</section>

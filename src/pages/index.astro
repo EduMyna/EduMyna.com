@@ -1,20 +1,18 @@
 ---
-import Container from "@/components/container.astro";
-import Cta from "@/components/cta.astro";
-import Features from "@/components/features.astro";
-import Hero from "@/components/hero.astro";
-import Logos from "@/components/logos.astro";
 import Layout from "@/layouts/Layout.astro";
+import Hero from "@/components/hero.astro";
+import ImpactStats from "@/components/impact-stats.astro";
+import Programs from "@/components/programs.astro";
+import MissionStatement from "@/components/mission-statement.astro";
+import GetInvolved from "@/components/get-involved.astro";
 ---
 
 <Layout
   title="Home"
-  description="Launch cohorts your students actually finish. EduMyna gives you the tool suite to design learning experiences students actually show up for, engage with, and complete."
->
-  <Container>
-    <Hero />
-    <Features />
-    <Logos />
-    <Cta />
-  </Container>
+  description="EduMyna is a nonprofit education initiative working in the gap between school and the world — funding programs, building tools, and shaping the discourse around India's undergraduate years.">
+  <Hero />
+  <ImpactStats />
+  <Programs />
+  <MissionStatement />
+  <GetInvolved />
 </Layout>

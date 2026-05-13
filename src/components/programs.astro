@@ -1,0 +1,64 @@
+---
+const areas = [
+  {
+    number: "01",
+    title: "Fund & Enable Programs",
+    description:
+      "EduMyna provides funding and institutional support for education programs operating in India's higher education space — the post-12th to graduation years that the formal system underleverages.",
+    href: "/story",
+  },
+  {
+    number: "02",
+    title: "Build Open Software",
+    description:
+      "We build and maintain open-source tools for the realities of running education programs in India — an LMS and a growing suite of micro tools. Self-hostable, no vendor lock-in, designed by people who have actually run programs at scale.",
+    href: "/blog",
+  },
+  {
+    number: "03",
+    title: "Shape the Discourse",
+    description:
+      "The art and science of pedagogy. Impact measurement. Cohort-based courses. The role of LLMs in education. Policy initiatives. EduMyna publishes, advocates, and builds the intellectual case for a different kind of education in India.",
+    href: "/resources",
+  },
+];
+---
+
+<section class="bg-myna-cream">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 py-20 lg:py-28">
+
+    <div class="max-w-xl mb-16">
+      <div class="inline-flex items-center gap-2 mb-4">
+        <span class="h-px w-8 bg-myna-brown"></span>
+        <span class="text-xs font-bold uppercase tracking-widest text-myna-brown">
+          What EduMyna does
+        </span>
+      </div>
+      <h2 class="text-4xl lg:text-5xl font-bold text-myna-black tracking-tight leading-tight">
+        Three things.<br />Done well.
+      </h2>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-px bg-myna-brown/15">
+      {areas.map((a) => (
+        <a
+          href={a.href}
+          class="group bg-myna-cream hover:bg-white transition-colors duration-200 p-8 lg:p-10 flex flex-col">
+          <span class="text-5xl font-bold text-myna-brown/20 tracking-tight leading-none mb-8">
+            {a.number}
+          </span>
+          <h3 class="text-xl font-bold text-myna-black tracking-tight mb-4">
+            {a.title}
+          </h3>
+          <p class="text-sm text-myna-black/60 leading-relaxed flex-1">
+            {a.description}
+          </p>
+          <span class="mt-8 text-xs font-bold uppercase tracking-widest text-myna-brown group-hover:text-myna-orange transition-colors">
+            Read more →
+          </span>
+        </a>
+      ))}
+    </div>
+
+  </div>
+</section>

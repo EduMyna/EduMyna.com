@@ -2,8 +2,7 @@
 import { SEO } from "astro-seo";
 import Footer from "@/components/footer.astro";
 import Navbar from "@/components/navbar/navbar.astro";
-import "@fontsource-variable/inter/index.css";
-import "@fontsource-variable/bricolage-grotesque";
+import "@fontsource-variable/bricolage-grotesque/index.css";
 import "../styles/global.css";
 
 export interface Props {
@@ -12,19 +11,20 @@ export interface Props {
 }
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site).toString();
-
 const resolvedImageWithDomain = new URL("/opengraph.jpg", Astro.site).toString();
 
 const {
   title = "",
-  description = "EduMyna is an open, online-first learning platform built from a decade of running real education programs at scale.",
+  description = "EduMyna is a nonprofit education initiative working in the gap between school and the world — funding programs, building tools, and shaping the discourse around India's undergraduate years.",
 } = Astro.props;
 
-const makeTitle = title ? `${title} | EduMyna` : "EduMyna | Open learning platform";
+const makeTitle = title
+  ? `${title} | EduMyna`
+  : "EduMyna | Education Initiative";
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="en" class="bg-myna-black">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
@@ -35,9 +35,7 @@ const makeTitle = title ? `${title} | EduMyna` : "EduMyna | Open learning platfo
       title={makeTitle}
       description={description}
       canonical={canonicalURL}
-      twitter={{
-        card: "summary_large_image",
-      }}
+      twitter={{ card: "summary_large_image" }}
       openGraph={{
         basic: {
           url: canonicalURL,
@@ -49,14 +47,9 @@ const makeTitle = title ? `${title} | EduMyna` : "EduMyna | Open learning platfo
       }}
     />
   </head>
-  <body>
+  <body class="bg-myna-black text-myna-white min-h-screen">
     <Navbar />
     <slot />
     <Footer />
-    <style is:global>
-      img {
-        content-visibility: auto;
-      }
-    </style>
   </body>
 </html>

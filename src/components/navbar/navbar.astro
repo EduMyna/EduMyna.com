@@ -1,60 +1,69 @@
 ---
-import Container from "@/components/container.astro";
 import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
 
 const menuitems = [
-  { title: "Home", path: "/" },
-  { title: "Features", path: "/#features" },
-  { title: "Pricing", path: "/pricing" },
-  { title: "Story", path: "/story" },
+  { title: "Mission", path: "/about" },
+  { title: "Programs", path: "/story" },
   { title: "Resources", path: "/resources" },
-  { title: "Consulting", path: "/consulting" },
-  { title: "GitHub", path: "https://github.com/EduMyna/EduMyna", external: true },
+  { title: "Blog", path: "/blog" },
 ];
 ---
 
-<Container>
-  <header class="flex flex-col lg:flex-row justify-between items-center my-5">
-    <Astronav>
-      <div class="flex w-full lg:w-auto items-center justify-between">
-        <a href="/" class="text-lg font-semibold tracking-tight">
-          <span class="text-slate-900">Edu</span><span class="text-slate-500">Myna</span>
-        </a>
-        <div class="block lg:hidden">
-          <MenuIcon class="w-4 h-4 text-gray-800" />
-        </div>
-      </div>
+<header class="fixed top-0 left-0 right-0 z-50 border-b border-myna-brown/30 bg-myna-black/90 backdrop-blur-sm">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8">
+    <div class="flex items-center justify-between h-16 lg:h-18">
 
-      <MenuItems class="hidden w-full lg:w-auto mt-2 lg:flex lg:mt-0">
-        <ul class="flex flex-col lg:flex-row lg:gap-1">
-          {
-            menuitems.map((item) => (
+      <Astronav>
+        <div class="flex w-full lg:w-auto items-center justify-between">
+          <!-- Logo -->
+          <a href="/" class="flex items-center gap-1 shrink-0">
+            <span class="text-xl font-bold tracking-tight text-myna-white">
+              Edu<span class="text-myna-amber">Myna</span>
+            </span>
+          </a>
+
+          <!-- Mobile hamburger -->
+          <div class="block lg:hidden ml-4">
+            <MenuIcon class="w-6 h-6 text-myna-white" />
+          </div>
+        </div>
+
+        <!-- Nav links -->
+        <MenuItems class="hidden w-full lg:w-auto mt-4 lg:flex lg:mt-0 lg:items-center">
+          <ul class="flex flex-col gap-1 pb-4 lg:pb-0 lg:flex-row lg:gap-0 lg:items-center">
+            {menuitems.map((item) => (
               <li>
                 <a
                   href={item.path}
-                  target={item.external ? "_blank" : undefined}
-                  rel={item.external ? "noopener noreferrer" : undefined}
-                  class="flex lg:px-3 py-2 items-center text-gray-600 hover:text-gray-900">
-                  <span>{item.title}</span>
+                  class="flex px-4 py-2 text-sm font-medium text-myna-white/60 hover:text-myna-amber transition-colors duration-200 tracking-wide uppercase">
+                  {item.title}
                 </a>
               </li>
-            ))
-          }
-        </ul>
-      </MenuItems>
-    </Astronav>
+            ))}
+            <!-- Mobile CTA -->
+            <li class="block lg:hidden mt-2 px-4">
+              <a
+                href="/contact"
+                class="inline-flex w-full items-center justify-center rounded-sm bg-myna-amber px-5 py-2.5 text-sm font-bold text-myna-black hover:bg-myna-amber-dark transition-colors tracking-wide uppercase">
+                Get Involved
+              </a>
+            </li>
+          </ul>
+        </MenuItems>
+      </Astronav>
 
-    <div class="hidden lg:flex items-center gap-3">
-      <a
-        href="/contact"
-        class="text-sm font-medium text-gray-600 hover:text-gray-900">
-        Contact
-      </a>
-      <a
-        href="/pricing"
-        class="inline-flex items-center justify-center rounded-md bg-black px-4 py-2 text-sm font-semibold text-white hover:bg-slate-800">
-        See pricing
-      </a>
+      <!-- Desktop CTA -->
+      <div class="hidden lg:flex items-center">
+        <a
+          href="/contact"
+          class="inline-flex items-center justify-center rounded-sm bg-myna-amber px-5 py-2.5 text-sm font-bold text-myna-black hover:bg-myna-amber-dark transition-colors duration-200 tracking-wide uppercase">
+          Get Involved
+        </a>
+      </div>
+
     </div>
-  </header>
-</Container>
+  </div>
+</header>
+
+<!-- Spacer to offset fixed nav -->
+<div class="h-16 lg:h-18"></div>

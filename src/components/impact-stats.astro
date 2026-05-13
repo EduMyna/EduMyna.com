@@ -1,0 +1,25 @@
+---
+const stats = [
+  { number: "12+", label: "Years of education work" },
+  { number: "500+", label: "Students reached" },
+  { number: "3", label: "Areas of work: programs, software, policy" },
+  { number: "1", label: "Flagship program in operation" },
+];
+---
+
+<section class="bg-myna-amber">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 py-12">
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
+      {stats.map((stat) => (
+        <div class="text-center lg:text-left">
+          <div class="text-4xl lg:text-5xl font-bold text-myna-black tracking-tight">
+            {stat.number}
+          </div>
+          <div class="mt-1 text-sm font-medium text-myna-black/70 leading-snug">
+            {stat.label}
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
