@@ -1,15 +1,26 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <!-- Background with rounded corners -->
-  <rect width="64" height="64" rx="12" fill="#0f172a"/>
+  <title>EduMyna</title>
 
-  <!-- E letter - clean geometric -->
-  <rect x="12" y="16" width="14" height="5" fill="#e2e8f0" rx="1"/>
-  <rect x="12" y="16" width="5" height="32" fill="#e2e8f0" rx="1"/>
-  <rect x="12" y="27" width="12" height="5" fill="#e2e8f0" rx="1"/>
-  <rect x="12" y="43" width="14" height="5" fill="#e2e8f0" rx="1"/>
+  <!-- Warm dark background -->
+  <rect width="64" height="64" rx="12" fill="#1A1209"/>
 
-  <!-- M letter - clean geometric -->
-  <rect x="30" y="16" width="5" height="32" fill="#94a3b8" rx="1"/>
-  <rect x="47" y="16" width="5" height="32" fill="#94a3b8" rx="1"/>
-  <path d="M35 16 L41 28 L47 16 L47 21 L41 33 L35 21 Z" fill="#94a3b8"/>
+  <!-- Tail feathers -->
+  <path d="M 13 46 C 8 53 4 60 3 64 L 11 59 C 10 63 13 62 16 56 L 18 50 Z" fill="#F5A623"/>
+
+  <!-- Body -->
+  <ellipse cx="29" cy="38" rx="17" ry="12" transform="rotate(-12 29 38)" fill="#F5A623"/>
+
+  <!-- Neck -->
+  <ellipse cx="41" cy="27" rx="9" ry="11" fill="#F5A623"/>
+
+  <!-- Head -->
+  <circle cx="45" cy="17" r="12" fill="#F5A623"/>
+
+  <!-- Eye -->
+  <circle cx="49" cy="15" r="3.5" fill="#1A1209"/>
+  <circle cx="50" cy="14" r="1.2" fill="#F5EFE0" opacity="0.9"/>
+
+  <!-- Beak -->
+  <path d="M 55 13 L 62 17 L 55 21 Z" fill="#D4891A"/>
+
 </svg>
