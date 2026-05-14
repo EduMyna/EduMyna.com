@@ -12,17 +12,14 @@ import Layout from "../layouts/Layout.astro";
   ============================================================ -->
   <section class="relative overflow-hidden bg-myna-black min-h-[70vh] flex items-end">
 
-    <!-- Radial amber glow -->
     <div class="absolute top-0 left-0 w-[800px] h-[800px] rounded-full pointer-events-none"
       style="background: radial-gradient(circle at top left, rgba(245,166,35,0.12) 0%, transparent 65%);">
     </div>
 
-    <!-- Dot grid -->
     <div class="absolute inset-0 opacity-[0.035] pointer-events-none"
       style="background-image: radial-gradient(circle, #F5EFE0 1px, transparent 1px); background-size: 28px 28px;">
     </div>
 
-    <!-- Large decorative year -->
     <div class="absolute bottom-0 right-0 text-[22rem] font-bold leading-none text-myna-amber/[0.04] select-none tracking-tighter pointer-events-none">
       2012
     </div>
@@ -43,21 +40,19 @@ import Layout from "../layouts/Layout.astro";
       </h1>
 
       <p class="mt-8 text-lg sm:text-xl text-myna-white/50 max-w-2xl leading-relaxed">
-        What began in 2012 as a physical incubator in Kochi has transformed — five times — into something that could not have been predicted at the start.
-        The mission stayed the same. Everything else changed.
+        What began in 2012 as a co-founded incubator in Kochi has — through pivots, partnerships, a parting of ways, and a return to first principles — become EduMyna. The mission never changed. Everything else did.
       </p>
 
-      <!-- Scroll indicator -->
-      <div class="mt-16 flex items-center gap-4">
+      <div class="mt-16 flex items-center gap-6">
         <div class="flex flex-col items-center gap-1">
           <div class="w-px h-12 bg-gradient-to-b from-myna-amber to-transparent"></div>
           <span class="text-xs text-myna-white/30 uppercase tracking-widest">Scroll</span>
         </div>
         <div class="flex items-center gap-3">
-          {["I", "II", "III", "IV", "V"].map((n) => (
+          {["Roots", "Fork", "Path"].map((n) => (
             <div class="flex flex-col items-center gap-1">
               <div class="w-1.5 h-1.5 rounded-full bg-myna-amber/40"></div>
-              <span class="text-[10px] text-myna-white/20 font-bold">{n}</span>
+              <span class="text-[10px] text-myna-white/20 font-bold uppercase tracking-widest">{n}</span>
             </div>
           ))}
         </div>
@@ -66,9 +61,7 @@ import Layout from "../layouts/Layout.astro";
     </div>
   </section>
 
-  <!-- ============================================================
-       MISSION CONSTANT STRIP
-  ============================================================ -->
+  <!-- Mission constant strip -->
   <div class="bg-myna-amber">
     <div class="max-w-7xl mx-auto px-5 sm:px-8 py-5">
       <p class="text-sm font-bold text-myna-black/70 uppercase tracking-widest text-center">
@@ -79,28 +72,35 @@ import Layout from "../layouts/Layout.astro";
   </div>
 
   <!-- ============================================================
+       PART ONE HEADER — THE SHARED ROOTS
+  ============================================================ -->
+  <div class="bg-myna-black border-b border-myna-brown/20">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-10">
+      <div class="flex items-center gap-4">
+        <span class="text-xs font-bold uppercase tracking-widest text-myna-white/25">Part One</span>
+        <span class="h-px flex-1 bg-myna-brown/20"></span>
+        <span class="text-xs font-bold uppercase tracking-widest text-myna-white/25">The Shared Roots · 2012–2022</span>
+      </div>
+      <p class="mt-4 text-sm text-myna-white/35 max-w-2xl leading-relaxed">
+        The first decade was co-founded work — built alongside a partner who led with equal commitment. The learnings from those years are what EduMyna is built on.
+      </p>
+    </div>
+  </div>
+
+  <!-- ============================================================
        ACT I — THE PHYSICAL BEGINNING
   ============================================================ -->
   <section class="bg-myna-black relative overflow-hidden">
-
-    <!-- Vertical timeline line -->
-    <div class="absolute left-5 sm:left-8 top-0 bottom-0 w-px bg-gradient-to-b from-myna-amber/30 via-myna-amber/10 to-transparent hidden lg:block" style="left: calc((100vw - min(80rem, 100vw)) / 2 + 2rem);">
-    </div>
-
     <div class="max-w-7xl mx-auto px-5 sm:px-8 py-20 lg:py-28">
 
-      <!-- Act header -->
       <div class="flex items-start gap-6 lg:gap-10 mb-14">
-        <div class="flex-shrink-0 relative">
+        <div class="flex-shrink-0">
           <div class="w-14 h-14 lg:w-16 lg:h-16 rounded-full bg-myna-amber flex items-center justify-center">
             <span class="text-xs font-bold text-myna-black uppercase tracking-widest">I</span>
           </div>
-          <div class="absolute top-16 left-1/2 -translate-x-1/2 w-px h-full bg-myna-amber/20 lg:hidden"></div>
         </div>
         <div>
-          <span class="text-xs font-bold uppercase tracking-widest text-myna-amber/60 mb-2 block">
-            2012 — 2015
-          </span>
+          <span class="text-xs font-bold uppercase tracking-widest text-myna-amber/60 mb-2 block">2012 — 2015</span>
           <h2 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-myna-white tracking-tight leading-tight">
             The Physical<br />Beginning
           </h2>
@@ -108,45 +108,36 @@ import Layout from "../layouts/Layout.astro";
             Startup Village · Kochi
           </p>
         </div>
-        <!-- Large act watermark -->
-        <div class="hidden xl:block ml-auto text-[10rem] font-bold text-myna-amber/05 leading-none tracking-tighter select-none flex-shrink-0">
-          I
-        </div>
+        <div class="hidden xl:block ml-auto text-[10rem] font-bold text-myna-amber/05 leading-none tracking-tighter select-none flex-shrink-0">I</div>
       </div>
 
       <div class="grid lg:grid-cols-2 gap-10 lg:gap-16">
 
-        <!-- Left: narrative -->
         <div class="space-y-6">
           <p class="text-base text-myna-white/65 leading-relaxed">
-            In 2012, a proposal to the Government of India became India's first Public-Private-Partnership technology incubator. 10,000 square feet. ₹2.5 crore in grants. A mandate to support 48 startups over five years.
+            In 2012, a proposal to the Government of India became India's first Public-Private-Partnership technology incubator. 10,000 square feet. ₹2.5 crore in grants. A mandate to support 48 startups over five years. It was co-founded work — two people building something neither could have built alone.
           </p>
           <p class="text-base text-myna-white/65 leading-relaxed">
-            By the end, the experiment had supported <span class="text-myna-white font-semibold">500 startups</span>, created <span class="text-myna-white font-semibold">3,139 jobs</span>, and helped startups raise <span class="text-myna-white font-semibold">₹45 crores</span> in funding. The returns were extraordinary by any metric.
+            By the end, the experiment had supported <span class="text-myna-white font-semibold">500 startups</span>, created <span class="text-myna-white font-semibold">3,139 jobs</span>, and helped startups raise <span class="text-myna-white font-semibold">₹45 crores</span>. The returns were extraordinary by any metric. Government partnerships, national media coverage, programs with global technology companies — the early years produced headline after headline.
           </p>
           <p class="text-base text-myna-white/65 leading-relaxed">
-            But success revealed the problem: every good outcome depended on a small team showing up every day for every startup. Artisanal mentorship. <span class="text-myna-amber">It couldn't scale.</span>
+            But success revealed the problem. Every good outcome depended on a small team showing up every day for every startup. Artisanal mentorship. <span class="text-myna-amber">It couldn't scale.</span>
           </p>
 
-          <!-- Pull quote -->
           <blockquote class="border-l-2 border-myna-amber pl-6 py-2 mt-8">
             <p class="text-xl font-bold text-myna-white leading-snug tracking-tight">
               "At scale, one person can't help a thousand people."
             </p>
-            <cite class="text-sm text-myna-white/35 mt-2 block not-italic">
-              The breakthrough insight, March 2015
-            </cite>
+            <cite class="text-sm text-myna-white/35 mt-2 block not-italic">The breakthrough insight, March 2015</cite>
           </blockquote>
 
           <p class="text-base text-myna-white/65 leading-relaxed">
-            The January 2015 strategic decision — <em class="text-myna-white not-italic font-semibold">"student startups only"</em> — was the first deliberate narrowing of focus. Constraint, it turned out, forces clarity.
+            The January 2015 decision — <em class="not-italic text-myna-white font-semibold">"student startups only"</em> — was the first deliberate narrowing. Constraint forces clarity.
           </p>
         </div>
 
-        <!-- Right: stats + press -->
         <div class="space-y-4">
 
-          <!-- Stats grid -->
           <div class="grid grid-cols-2 gap-3">
             {[
               { n: "500+", l: "Startups supported" },
@@ -161,7 +152,6 @@ import Layout from "../layouts/Layout.astro";
             ))}
           </div>
 
-          <!-- Model card -->
           <div class="bg-myna-brown/10 border border-myna-brown/25 rounded-sm p-5 space-y-3">
             <div class="text-xs font-bold uppercase tracking-widest text-myna-amber/60">The Model</div>
             {[
@@ -177,7 +167,6 @@ import Layout from "../layouts/Layout.astro";
             ))}
           </div>
 
-          <!-- Press mentions -->
           <div class="space-y-2">
             <div class="text-xs font-bold uppercase tracking-widest text-myna-white/25 mb-3">Press</div>
             {[
@@ -185,11 +174,8 @@ import Layout from "../layouts/Layout.astro";
               { outlet: "YouTube", label: "A school for startups", href: "https://www.youtube.com/watch?v=LCsQ68plQos" },
               { outlet: "Silicon India", label: "India's first startup village", href: "https://www.siliconindia.com/shownews/www.siliconindia.com/shownews/indias-first-startup-village-at-kochi-nid-103361-cid-100.html" },
             ].map(p => (
-              <a href={p.href} target="_blank" rel="noopener noreferrer"
-                class="flex items-center gap-3 group">
-                <span class="text-[10px] font-bold uppercase tracking-widest text-myna-amber/50 bg-myna-amber/10 px-2 py-1 rounded-sm flex-shrink-0 group-hover:text-myna-amber transition-colors">
-                  {p.outlet}
-                </span>
+              <a href={p.href} target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 group">
+                <span class="text-[10px] font-bold uppercase tracking-widest text-myna-amber/50 bg-myna-amber/10 px-2 py-1 rounded-sm flex-shrink-0 group-hover:text-myna-amber transition-colors">{p.outlet}</span>
                 <span class="text-xs text-myna-white/35 group-hover:text-myna-white/60 transition-colors truncate">{p.label} →</span>
               </a>
             ))}
@@ -220,9 +206,7 @@ import Layout from "../layouts/Layout.astro";
           </div>
         </div>
         <div>
-          <span class="text-xs font-bold uppercase tracking-widest text-myna-amber/60 mb-2 block">
-            2015 — 2018
-          </span>
+          <span class="text-xs font-bold uppercase tracking-widest text-myna-amber/60 mb-2 block">2015 — 2018</span>
           <h2 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-myna-white tracking-tight leading-tight">
             The Digital<br />Experiment
           </h2>
@@ -230,46 +214,41 @@ import Layout from "../layouts/Layout.astro";
             SV.CO · Bangalore
           </p>
         </div>
-        <div class="hidden xl:block ml-auto text-[10rem] font-bold text-myna-amber/05 leading-none tracking-tighter select-none flex-shrink-0">
-          II
-        </div>
+        <div class="hidden xl:block ml-auto text-[10rem] font-bold text-myna-amber/05 leading-none tracking-tighter select-none flex-shrink-0">II</div>
       </div>
 
       <div class="grid lg:grid-cols-2 gap-10 lg:gap-16">
 
         <div class="space-y-6">
           <p class="text-base text-myna-white/65 leading-relaxed">
-            February 2015. Physical operations wound down. SV.CO — a pure web platform — became the future. No physical space. No mobile apps. Web-first, structured progression, cohort-based delivery.
+            February 2015. Physical operations wound down. The case for going fully digital — no physical space, no mobile apps, web-first structured progression — had been building for months. Pushing the organisation toward that decision was a contribution that shaped everything that followed.
           </p>
           <p class="text-base text-myna-white/65 leading-relaxed">
-            The product evolved rapidly: startup timelines, 5/10/20/30 stage progression models, six-week cohort cycles, submission-based advancement. Students had to ship to progress.
+            SV.CO became a pure web platform. Cohort cycles. Stage-based progression. Submission-based advancement — students had to ship to move forward. The startup-focused framing held for now, but the ground was shifting.
           </p>
           <p class="text-base text-myna-white/65 leading-relaxed">
-            Then came June 2017 — a trip to Silicon Valley with a student cohort. What came back wasn't enthusiasm. It was <span class="text-myna-amber">clarity about the gap.</span>
+            June 2017: a Silicon Valley trip with a student cohort brought clarity that no roadmap could have. What came back wasn't enthusiasm. It was an honest diagnosis.
           </p>
 
           <blockquote class="border-l-2 border-myna-amber pl-6 py-2">
             <p class="text-xl font-bold text-myna-white leading-snug tracking-tight">
               "The Valley wasn't producing great founders because of incubators. It was producing them because the education system was building people who could actually make things."
             </p>
-            <cite class="text-sm text-myna-white/35 mt-2 block not-italic">
-              Post-Silicon Valley clarity session, July 2017
-            </cite>
+            <cite class="text-sm text-myna-white/35 mt-2 block not-italic">Post-Silicon Valley clarity session, July 2017</cite>
           </blockquote>
 
           <p class="text-base text-myna-white/65 leading-relaxed">
-            November 2017: the startup narrative was officially over. A new question took its place.
+            November 2017: the startup narrative was officially over. The question that replaced it would drive everything that came next.
           </p>
         </div>
 
         <div class="space-y-4">
 
-          <!-- The question shift — visual card -->
           <div class="bg-myna-brown/10 border border-myna-brown/30 rounded-sm p-6">
             <div class="text-xs font-bold uppercase tracking-widest text-myna-amber/60 mb-5">The Question That Changed Everything</div>
             <div class="space-y-4">
               <div class="flex items-start gap-4">
-                <span class="text-lg text-red-400/60 flex-shrink-0 mt-0.5">✕</span>
+                <span class="text-base text-red-400/50 flex-shrink-0 mt-0.5">✕</span>
                 <div>
                   <div class="text-xs text-myna-white/30 uppercase tracking-wider mb-1">Old question</div>
                   <p class="text-sm text-myna-white/50 leading-relaxed">"How do we help students start startups?"</p>
@@ -277,7 +256,7 @@ import Layout from "../layouts/Layout.astro";
               </div>
               <div class="h-px bg-myna-brown/30"></div>
               <div class="flex items-start gap-4">
-                <span class="text-lg text-myna-amber flex-shrink-0 mt-0.5">→</span>
+                <span class="text-base text-myna-amber flex-shrink-0 mt-0.5">→</span>
                 <div>
                   <div class="text-xs text-myna-amber/60 uppercase tracking-wider mb-1">New question</div>
                   <p class="text-sm text-myna-white font-semibold leading-relaxed">"How do we help students become <em class="not-italic text-myna-amber">genuinely capable</em>?"</p>
@@ -286,14 +265,13 @@ import Layout from "../layouts/Layout.astro";
             </div>
           </div>
 
-          <!-- Model card -->
           <div class="bg-myna-brown/10 border border-myna-brown/25 rounded-sm p-5 space-y-3">
             <div class="text-xs font-bold uppercase tracking-widest text-myna-amber/60">The Model</div>
             {[
               ["Funding", "Freemium + cohort fees (₹5K–₹15K)"],
               ["Delivery", "Web platform, cohort-based progression"],
               ["Customer", "Student startups exclusively"],
-              ["Scalability", "Medium — platform-enabled"],
+              ["Key shift", "Skills over startups"],
             ].map(([k, v]) => (
               <div class="flex justify-between items-start gap-4 border-t border-myna-white/5 pt-3 first:border-0 first:pt-0">
                 <span class="text-xs text-myna-white/35 uppercase tracking-wider flex-shrink-0">{k}</span>
@@ -302,7 +280,6 @@ import Layout from "../layouts/Layout.astro";
             ))}
           </div>
 
-          <!-- Press -->
           <div class="space-y-2">
             <div class="text-xs font-bold uppercase tracking-widest text-myna-white/25 mb-3">Press</div>
             {[
@@ -311,11 +288,8 @@ import Layout from "../layouts/Layout.astro";
               { outlet: "Economic Times", label: "Going completely digital", href: "https://economictimes.indiatimes.com/et-now/tech/startup-village-coo-talks-about-going-completely-digital/videoshow/53161490.cms" },
               { outlet: "Financial Express", label: "Ranked #1 incubator in India", href: "https://www.financialexpress.com/industry/kochi-startup-village-countrys-best/325625/" },
             ].map(p => (
-              <a href={p.href} target="_blank" rel="noopener noreferrer"
-                class="flex items-center gap-3 group">
-                <span class="text-[10px] font-bold uppercase tracking-widest text-myna-amber/50 bg-myna-amber/10 px-2 py-1 rounded-sm flex-shrink-0 group-hover:text-myna-amber transition-colors">
-                  {p.outlet}
-                </span>
+              <a href={p.href} target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 group">
+                <span class="text-[10px] font-bold uppercase tracking-widest text-myna-amber/50 bg-myna-amber/10 px-2 py-1 rounded-sm flex-shrink-0 group-hover:text-myna-amber transition-colors">{p.outlet}</span>
                 <span class="text-xs text-myna-white/35 group-hover:text-myna-white/60 transition-colors truncate">{p.label} →</span>
               </a>
             ))}
@@ -326,7 +300,7 @@ import Layout from "../layouts/Layout.astro";
     </div>
   </section>
 
-  <!-- Cream wave divider -->
+  <!-- Cream wave -->
   <div class="relative bg-myna-black">
     <svg viewBox="0 0 1440 80" preserveAspectRatio="none" class="w-full h-20 block" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M0,40 C360,80 720,0 1080,40 C1260,60 1380,30 1440,40 L1440,80 L0,80 Z" fill="#FAF7F2"/>
@@ -346,9 +320,7 @@ import Layout from "../layouts/Layout.astro";
           </div>
         </div>
         <div>
-          <span class="text-xs font-bold uppercase tracking-widest text-myna-brown/60 mb-2 block">
-            2018 — 2023
-          </span>
+          <span class="text-xs font-bold uppercase tracking-widest text-myna-brown/60 mb-2 block">2018 — 2022</span>
           <h2 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-myna-black tracking-tight leading-tight">
             University<br />Integration Era
           </h2>
@@ -356,54 +328,45 @@ import Layout from "../layouts/Layout.astro";
             Pupilfirst · Open Source
           </p>
         </div>
-        <div class="hidden xl:block ml-auto text-[10rem] font-bold text-myna-black/[0.04] leading-none tracking-tighter select-none flex-shrink-0">
-          III
-        </div>
+        <div class="hidden xl:block ml-auto text-[10rem] font-bold text-myna-black/[0.04] leading-none tracking-tighter select-none flex-shrink-0">III</div>
       </div>
 
       <div class="grid lg:grid-cols-2 gap-10 lg:gap-16">
 
         <div class="space-y-6">
           <p class="text-base text-myna-black/65 leading-relaxed">
-            2018 became a year of simultaneous experiments. The team ran four partnerships at once, learning from each: Hackkar (developer hiring — failed quickly), Apple iOS School at Manipal (credit-integrated — worked), Facebook VR (mission drift — cautionary), Freshworks at Sastra (genuine alignment — success).
+            2018 became a year of simultaneous experiments — four partnerships running at once, each one teaching something different. Hackkar (developer hiring) failed fast. Apple iOS School at Manipal worked and became a template. Facebook VR showed what mission misalignment looks like operationally. Freshworks at Sastra showed what mission alignment makes possible.
           </p>
           <p class="text-base text-myna-black/65 leading-relaxed">
-            December 5, 2018: while building for partners, the team noticed something. The platform they'd constructed — cohort management, submission tracking, feedback loops, progression logic — was comparable to Teachable.com, then valued at over $100 million.
+            Then, in December 2018, the team noticed something. The platform built to run programs — cohort management, submission tracking, feedback loops, progression logic — was comparable to Teachable.com, then valued at over $100 million. The decision: extract it. Open-source it.
           </p>
           <p class="text-base text-myna-black/65 leading-relaxed">
-            The decision: extract it. Open-source it. The <span class="font-semibold text-myna-black">pupilfirst.com</span> domain was registered that same day.
+            Pupilfirst was built and open-sourced as a commitment: <span class="font-semibold text-myna-black">knowledge shouldn't be locked in proprietary systems.</span> When the pandemic came, the team had been building online-first for years. The world caught up.
           </p>
 
           <blockquote class="border-l-2 border-myna-brown pl-6 py-2">
             <p class="text-xl font-bold text-myna-black leading-snug tracking-tight">
               "Mission alignment isn't a soft requirement — it's operational."
             </p>
-            <cite class="text-sm text-myna-black/40 mt-2 block not-italic">
-              Key learning from the partnership experiments
-            </cite>
+            <cite class="text-sm text-myna-black/40 mt-2 block not-italic">Key learning from the partnership experiments</cite>
           </blockquote>
-
-          <p class="text-base text-myna-black/65 leading-relaxed">
-            June 27, 2019: 316 commits merged in a single day. The platform's student dashboard was rebuilt entirely. A rich curriculum system — comparable to WordPress Gutenberg — replaced what came before. The pandemic that followed didn't disrupt operations. The team had been building online-first for years.
-          </p>
         </div>
 
         <div class="space-y-4">
 
-          <!-- Experiments result card -->
           <div class="bg-white border border-myna-black/10 rounded-sm p-6">
             <div class="text-xs font-bold uppercase tracking-widest text-myna-brown mb-5">2018 Experiments</div>
             <div class="space-y-4">
               {[
-                { name: "Hackkar", result: "Closed — timing mismatch", color: "text-myna-black/40", dot: "bg-myna-black/20" },
-                { name: "Apple iOS @ Manipal", result: "Worked — template established", color: "text-myna-black", dot: "bg-myna-amber" },
-                { name: "Facebook VR", result: "Cautionary — mission drift", color: "text-myna-black/40", dot: "bg-myna-orange" },
-                { name: "Freshworks @ Sastra", result: "Success — mission aligned", color: "text-myna-black", dot: "bg-myna-amber" },
+                { name: "Hackkar", result: "Closed — timing mismatch", dot: "bg-myna-black/20" },
+                { name: "Apple iOS @ Manipal", result: "Worked — template established", dot: "bg-myna-amber" },
+                { name: "Facebook VR", result: "Cautionary — mission drift", dot: "bg-myna-orange/60" },
+                { name: "Freshworks @ Sastra", result: "Success — mission aligned", dot: "bg-myna-amber" },
               ].map(e => (
                 <div class="flex items-start gap-3 border-t border-myna-black/5 pt-3 first:border-0 first:pt-0">
                   <div class:list={["w-2 h-2 rounded-full mt-1.5 flex-shrink-0", e.dot]}></div>
                   <div>
-                    <div class:list={["text-sm font-semibold", e.color]}>{e.name}</div>
+                    <div class="text-sm font-semibold text-myna-black">{e.name}</div>
                     <div class="text-xs text-myna-black/40 mt-0.5">{e.result}</div>
                   </div>
                 </div>
@@ -411,14 +374,13 @@ import Layout from "../layouts/Layout.astro";
             </div>
           </div>
 
-          <!-- Model card -->
           <div class="bg-white border border-myna-black/10 rounded-sm p-5 space-y-3">
             <div class="text-xs font-bold uppercase tracking-widest text-myna-brown">The Model</div>
             {[
               ["Funding", "B2B2C enterprise deals"],
               ["Delivery", "LMS platform + credit integration"],
               ["Customer", "Corporates + Universities"],
-              ["Milestone", "316 commits in a single day"],
+              ["Achievement", "Open-sourced entire platform"],
             ].map(([k, v]) => (
               <div class="flex justify-between items-start gap-4 border-t border-myna-black/5 pt-3 first:border-0 first:pt-0">
                 <span class="text-xs text-myna-black/35 uppercase tracking-wider flex-shrink-0">{k}</span>
@@ -427,19 +389,15 @@ import Layout from "../layouts/Layout.astro";
             ))}
           </div>
 
-          <!-- Pupilfirst links -->
           <div class="space-y-2">
             <div class="text-xs font-bold uppercase tracking-widest text-myna-black/25 mb-3">Platform</div>
             {[
               { outlet: "GitHub", label: "Open-source LMS (Pupilfirst)", href: "https://github.com/pupilfirst/pupilfirst" },
               { outlet: "Live", label: "pupilfirst.org", href: "https://www.pupilfirst.org/" },
-              { outlet: "Times of India", label: "Facebook partnership", href: "https://timesofindia.indiatimes.com/business/india-business/sv-co-facebook-to-partner-with-academia-for-tech-training/articleshow/62058516.cms" },
+              { outlet: "Times of India", label: "Facebook & academia partnership", href: "https://timesofindia.indiatimes.com/business/india-business/sv-co-facebook-to-partner-with-academia-for-tech-training/articleshow/62058516.cms" },
             ].map(p => (
-              <a href={p.href} target="_blank" rel="noopener noreferrer"
-                class="flex items-center gap-3 group">
-                <span class="text-[10px] font-bold uppercase tracking-widest text-myna-brown/60 bg-myna-brown/10 px-2 py-1 rounded-sm flex-shrink-0 group-hover:text-myna-brown transition-colors">
-                  {p.outlet}
-                </span>
+              <a href={p.href} target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 group">
+                <span class="text-[10px] font-bold uppercase tracking-widest text-myna-brown/60 bg-myna-brown/10 px-2 py-1 rounded-sm flex-shrink-0 group-hover:text-myna-brown transition-colors">{p.outlet}</span>
                 <span class="text-xs text-myna-black/35 group-hover:text-myna-black/70 transition-colors truncate">{p.label} →</span>
               </a>
             ))}
@@ -450,15 +408,89 @@ import Layout from "../layouts/Layout.astro";
     </div>
   </section>
 
-  <!-- Dark wave back -->
+  <!-- ============================================================
+       THE FORK
+  ============================================================ -->
   <div class="relative bg-myna-cream">
     <svg viewBox="0 0 1440 80" preserveAspectRatio="none" class="w-full h-20 block" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M0,40 C360,0 720,80 1080,40 C1260,20 1380,50 1440,40 L1440,80 L0,80 Z" fill="#1A1209"/>
     </svg>
   </div>
 
+  <section class="bg-myna-black relative overflow-hidden">
+
+    <div class="absolute inset-0 opacity-[0.03] pointer-events-none"
+      style="background-image: radial-gradient(circle, #F5A623 1px, transparent 1px); background-size: 32px 32px;">
+    </div>
+
+    <div class="relative max-w-7xl mx-auto px-5 sm:px-8 py-20 lg:py-24">
+
+      <div class="max-w-3xl">
+
+        <div class="inline-flex items-center gap-2 mb-8">
+          <span class="h-px w-8 bg-myna-amber/40"></span>
+          <span class="text-xs font-bold uppercase tracking-widest text-myna-amber/40">2022</span>
+          <span class="h-px w-8 bg-myna-amber/40"></span>
+        </div>
+
+        <h2 class="text-4xl sm:text-5xl font-bold text-myna-white tracking-tight leading-tight mb-8">
+          The Divergence
+        </h2>
+
+        <div class="space-y-5">
+          <p class="text-base text-myna-white/60 leading-relaxed">
+            After a decade of co-founded work, a difference in vision about how to continue led to a parting. Not a falling out — a fork. Two people who had built the same thing now saw different paths forward, and stayed honest about it.
+          </p>
+          <p class="text-base text-myna-white/60 leading-relaxed">
+            The platform continued on one path. This story follows the other — the one that went back to the question of learning itself.
+          </p>
+          <p class="text-lg text-myna-white font-semibold leading-relaxed">
+            What came next — HowToCBC, The Second Design, EduMyna — is built entirely from that choice.
+          </p>
+        </div>
+
+        <!-- Fork visual -->
+        <div class="mt-12 flex items-start gap-0">
+          <div class="flex flex-col items-center">
+            <div class="w-3 h-3 rounded-full bg-myna-amber"></div>
+            <div class="w-px h-12 bg-myna-amber/30"></div>
+            <div class="flex gap-12 sm:gap-24">
+              <div class="flex flex-col items-center">
+                <div class="w-px h-8 bg-myna-white/10"></div>
+                <div class="w-2 h-2 rounded-full bg-myna-white/20"></div>
+                <div class="text-xs text-myna-white/25 mt-2 text-center max-w-[100px] leading-snug">The platform<br />continued</div>
+              </div>
+              <div class="flex flex-col items-center">
+                <div class="w-px h-8 bg-myna-amber/60"></div>
+                <div class="w-2 h-2 rounded-full bg-myna-amber"></div>
+                <div class="text-xs text-myna-amber/70 mt-2 text-center max-w-[100px] leading-snug">This path<br />continued</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
   <!-- ============================================================
-       ACT IV — THE GREAT UNBUNDLING
+       PART TWO HEADER — GAUTHAM'S PATH
+  ============================================================ -->
+  <div class="bg-myna-black border-t border-myna-brown/20">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-10">
+      <div class="flex items-center gap-4">
+        <span class="text-xs font-bold uppercase tracking-widest text-myna-white/25">Part Two</span>
+        <span class="h-px flex-1 bg-myna-brown/20"></span>
+        <span class="text-xs font-bold uppercase tracking-widest text-myna-white/25">A New Path · 2022–Present</span>
+      </div>
+      <p class="mt-4 text-sm text-myna-white/35 max-w-2xl leading-relaxed">
+        What follows is built entirely from one person's choices — tested in the market, refined through real cohorts, and now converging into EduMyna.
+      </p>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       ACT IV — HOWTOCBC & THE SECOND DESIGN
   ============================================================ -->
   <section class="bg-myna-black relative overflow-hidden">
     <div class="max-w-7xl mx-auto px-5 sm:px-8 py-20 lg:py-28">
@@ -470,80 +502,80 @@ import Layout from "../layouts/Layout.astro";
           </div>
         </div>
         <div>
-          <span class="text-xs font-bold uppercase tracking-widest text-myna-amber/60 mb-2 block">
-            2023 — 2024
-          </span>
+          <span class="text-xs font-bold uppercase tracking-widest text-myna-amber/60 mb-2 block">2022 — 2024</span>
           <h2 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-myna-white tracking-tight leading-tight">
-            The Great<br />Unbundling
+            Back to<br />First Principles
           </h2>
           <p class="mt-3 text-base text-myna-white/40 font-semibold uppercase tracking-wider">
-            Direct to Consumer · Credits
+            HowToCBC · The Second Design
           </p>
         </div>
-        <div class="hidden xl:block ml-auto text-[10rem] font-bold text-myna-amber/05 leading-none tracking-tighter select-none flex-shrink-0">
-          IV
-        </div>
+        <div class="hidden xl:block ml-auto text-[10rem] font-bold text-myna-amber/05 leading-none tracking-tighter select-none flex-shrink-0">IV</div>
       </div>
 
       <div class="grid lg:grid-cols-2 gap-10 lg:gap-16">
 
         <div class="space-y-6">
           <p class="text-base text-myna-white/65 leading-relaxed">
-            November 2023: a brutally honest internal document reached its conclusion. The B2B2C university-integrated model — codenamed LITE — wasn't scaling. Universities moved too slowly. Integration was too complex. The sentence was direct: <span class="text-myna-amber font-semibold">"LITE is a failure — stop it."</span>
+            January 2022. A new venture, built from scratch, with a collaborator whose background was everything the education experiment needed: Dr. Aruna Kesavan — cosmologist, Harvard lecturer, 15 years of evidence-based teaching experience, 10,000+ students.
           </p>
           <p class="text-base text-myna-white/65 leading-relaxed">
-            The new strategy: go directly to students. Sell subscriptions. Offer industry-recognized credentials alongside India's government-backed Academic Bank of Credits. Let students stack micro-credentials without a university as gatekeeper.
+            HowToCBC set out to ride the cohort-based courses wave — teaching educators and professionals how to design and launch learning programs. What it actually built was a methodology. Students launched courses and made money. Alumni ranged from UN executives to hedge fund partners to therapists. A 2-week course earned a perfect 10/10 rating.
           </p>
           <p class="text-base text-myna-white/65 leading-relaxed">
-            The philosophy crystallized: instead of fixing universities from within, go <em class="not-italic text-myna-white font-semibold">around</em> them — while simultaneously offering a path back into the formal system on the student's own terms.
+            By 2023, the name had been outgrown. CBC hadn't gone mainstream. The ambitions had. In March 2024, the work was renamed and repositioned as <span class="text-myna-white font-semibold">The Second Design</span> — an education design studio built on a single philosophy:
           </p>
 
           <blockquote class="border-l-2 border-myna-amber pl-6 py-2">
             <p class="text-xl font-bold text-myna-white leading-snug tracking-tight">
-              "Unbundle traditional degrees. Then offer a pathway to re-bundle them — on the student's terms."
+              "The first iteration is a shitty first draft. The second iteration is where design shows."
             </p>
           </blockquote>
+
+          <p class="text-base text-myna-white/65 leading-relaxed">
+            1,500+ learners. Clients including McDonald's, IMG Academy, Glovo, FOSS United. A flagship program — RealWorldReady — with 63% of participants rating sessions 10/10.
+          </p>
         </div>
 
         <div class="space-y-4">
 
-          <!-- What changed / what stayed -->
           <div class="bg-myna-brown/10 border border-myna-brown/30 rounded-sm p-6">
-            <div class="text-xs font-bold uppercase tracking-widest text-myna-amber/60 mb-5">What Changed vs What Stayed</div>
-            <div class="grid grid-cols-2 gap-4">
-              <div>
-                <div class="text-xs text-myna-amber/60 uppercase tracking-wider mb-3">Stayed the same</div>
-                <ul class="space-y-2">
-                  {["The platform", "The pedagogy", "Open-source commitment", "Teaching real skills"].map(i => (
-                    <li class="flex items-center gap-2">
-                      <span class="w-1 h-1 rounded-full bg-myna-amber/50 flex-shrink-0"></span>
-                      <span class="text-xs text-myna-white/60">{i}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div>
-                <div class="text-xs text-myna-white/30 uppercase tracking-wider mb-3">Changed</div>
-                <ul class="space-y-2">
-                  {["B2B2C → B2C", "Enterprise → Subscription", "University sales → Direct", "Slow → Fast"].map(i => (
-                    <li class="flex items-center gap-2">
-                      <span class="w-1 h-1 rounded-full bg-myna-orange/50 flex-shrink-0"></span>
-                      <span class="text-xs text-myna-white/60">{i}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+            <div class="text-xs font-bold uppercase tracking-widest text-myna-amber/60 mb-5">HowToCBC → The Second Design</div>
+            <div class="space-y-4">
+              {[
+                { year: "Jan 2022", event: "HowToCBC launched with Dr. Aruna Kesavan" },
+                { year: "2022–23", event: "1,500+ learners, global alumni, Maven Accelerator (top 75 of 2,000+ applicants)" },
+                { year: "Oct 2023", event: "Outgrew the name — broader ambitions needed a broader brand" },
+                { year: "Mar 2024", event: "The Second Design launched as education design studio" },
+              ].map(e => (
+                <div class="flex items-start gap-4 border-t border-myna-white/5 pt-4 first:border-0 first:pt-0">
+                  <span class="text-[10px] font-bold text-myna-amber/50 uppercase tracking-wider flex-shrink-0 mt-0.5 w-16">{e.year}</span>
+                  <span class="text-xs text-myna-white/60 leading-relaxed">{e.event}</span>
+                </div>
+              ))}
             </div>
           </div>
 
-          <!-- Model card -->
+          <div class="grid grid-cols-3 gap-3">
+            {[
+              { n: "1,500+", l: "Learners" },
+              { n: "10/10", l: "Rating received" },
+              { n: "63%", l: "Rated sessions 10/10" },
+            ].map(s => (
+              <div class="bg-myna-brown/20 border border-myna-brown/30 rounded-sm p-4">
+                <div class="text-2xl font-bold text-myna-amber leading-none tracking-tighter">{s.n}</div>
+                <div class="text-xs text-myna-white/45 mt-2 leading-snug">{s.l}</div>
+              </div>
+            ))}
+          </div>
+
           <div class="bg-myna-brown/10 border border-myna-brown/25 rounded-sm p-5 space-y-3">
             <div class="text-xs font-bold uppercase tracking-widest text-myna-amber/60">The Model</div>
             {[
-              ["Funding", "₹999/mo or ₹4,999/6 months"],
-              ["Delivery", "Self-serve + ABC credits"],
-              ["Customer", "Individual students directly"],
-              ["Scalability", "High — no gatekeepers"],
+              ["Approach", "Education design studio"],
+              ["Programs", "RealWorldReady flagship"],
+              ["Clients", "McDonald's, IMG Academy, Glovo, FOSS United"],
+              ["Collaborator", "Dr. Aruna Kesavan, Harvard"],
             ].map(([k, v]) => (
               <div class="flex justify-between items-start gap-4 border-t border-myna-white/5 pt-3 first:border-0 first:pt-0">
                 <span class="text-xs text-myna-white/35 uppercase tracking-wider flex-shrink-0">{k}</span>
@@ -557,7 +589,7 @@ import Layout from "../layouts/Layout.astro";
     </div>
   </section>
 
-  <!-- Brown transition -->
+  <!-- Brown wave -->
   <div class="relative bg-myna-black">
     <svg viewBox="0 0 1440 80" preserveAspectRatio="none" class="w-full h-20 block" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M0,20 C240,60 480,0 720,40 C960,70 1200,20 1440,50 L1440,80 L0,80 Z" fill="#6B3A2A"/>
@@ -565,11 +597,10 @@ import Layout from "../layouts/Layout.astro";
   </div>
 
   <!-- ============================================================
-       ACT V — THE AI REVOLUTION (EduMyna)
+       ACT V — EDUMYNA
   ============================================================ -->
   <section class="bg-myna-brown relative overflow-hidden">
 
-    <!-- Amber glow -->
     <div class="absolute top-0 right-0 w-[600px] h-[600px] rounded-full pointer-events-none"
       style="background: radial-gradient(circle at top right, rgba(245,166,35,0.15) 0%, transparent 65%);">
     </div>
@@ -583,9 +614,7 @@ import Layout from "../layouts/Layout.astro";
           </div>
         </div>
         <div>
-          <span class="text-xs font-bold uppercase tracking-widest text-myna-amber/70 mb-2 block">
-            2024 — Present
-          </span>
+          <span class="text-xs font-bold uppercase tracking-widest text-myna-amber/70 mb-2 block">2024 — Present</span>
           <h2 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-myna-white tracking-tight leading-tight">
             EduMyna
           </h2>
@@ -593,58 +622,51 @@ import Layout from "../layouts/Layout.astro";
             The Integration
           </p>
         </div>
-        <div class="hidden xl:block ml-auto text-[10rem] font-bold text-myna-amber/10 leading-none tracking-tighter select-none flex-shrink-0">
-          V
-        </div>
+        <div class="hidden xl:block ml-auto text-[10rem] font-bold text-myna-amber/10 leading-none tracking-tighter select-none flex-shrink-0">V</div>
       </div>
 
       <div class="grid lg:grid-cols-2 gap-10 lg:gap-16">
 
         <div class="space-y-6">
           <p class="text-base text-myna-white/70 leading-relaxed">
-            Twelve years of experiments converged into a single structural question: to reach millions of students at ₹999 per month, what would the institution need to be?
+            Twelve years of experiments — some shared, some solo — converged into a single structural question: what does the institution need to be to take this work to genuine scale?
           </p>
           <p class="text-base text-myna-white/70 leading-relaxed">
-            EduMyna is the answer. Not another pivot — an integration. The infrastructure from Pupilfirst, the pedagogy developed through years of cohort programs, AI-first delivery, direct-to-consumer reach, academic credit integration, and an open-source commitment built into the DNA.
+            EduMyna is the answer. The pedagogy from years of cohort programs. Infrastructure built on open-source foundations. AI-first delivery that makes high-quality education sustainable at ₹999 per month. A direct-to-student model with a path back into India's formal credit system.
           </p>
           <p class="text-base text-myna-white/70 leading-relaxed">
-            The human role evolves: teachers move from grading papers to designing curriculum, mentoring complex problems, building relationships, inspiring students. Intelligent automation handles the rest.
-          </p>
-          <p class="text-base text-myna-white/70 leading-relaxed">
-            EduMyna is registering as a <span class="text-myna-white font-semibold">Section 8 nonprofit</span>. It funds and enables education programs, builds open software, and shapes the discourse around what India's undergraduate years should mean.
+            It is registering as a <span class="text-myna-white font-semibold">Section 8 nonprofit</span>. It funds and enables education programs, builds open software, and shapes the discourse around what India's undergraduate years should mean — the post-12th to graduation gap that the formal system consistently underleverages.
           </p>
 
           <blockquote class="border-l-2 border-myna-amber pl-6 py-2">
             <p class="text-xl font-bold text-myna-white leading-snug tracking-tight">
-              "Same mission as 2009.<br />Completely different delivery mechanism."
+              "Same mission as 2009.<br />Entirely my own path forward."
             </p>
           </blockquote>
         </div>
 
         <div class="space-y-4">
 
-          <!-- Integration diagram -->
           <div class="bg-myna-black/20 border border-myna-amber/20 rounded-sm p-6">
-            <div class="text-xs font-bold uppercase tracking-widest text-myna-amber/70 mb-5">The Integration</div>
+            <div class="text-xs font-bold uppercase tracking-widest text-myna-amber/70 mb-5">What EduMyna Is Built On</div>
             <div class="space-y-3">
               {[
-                { from: "Pupilfirst", what: "Infrastructure + open-source LMS" },
-                { from: "Cohort programs", what: "Proven pedagogy + curriculum" },
-                { from: "Academic Bank of Credits", what: "Formal system integration" },
-                { from: "AI-first delivery", what: "Scale to millions" },
+                { from: "10 years of co-founded work", what: "Learnings, not ownership — earned through co-founding" },
+                { from: "The Second Design", what: "Proven pedagogy and RealWorldReady curriculum" },
+                { from: "Open-source infrastructure", what: "Built on Pupilfirst foundations, forked and continued" },
+                { from: "AI-first delivery", what: "The economic model that makes scale possible" },
               ].map(item => (
                 <div class="flex items-start gap-3 border-t border-myna-white/10 pt-3 first:border-0 first:pt-0">
                   <span class="text-myna-amber text-xs flex-shrink-0 mt-0.5">→</span>
                   <div>
                     <div class="text-xs font-bold text-myna-white/70">{item.from}</div>
-                    <div class="text-xs text-myna-white/40 mt-0.5">{item.what}</div>
+                    <div class="text-xs text-myna-white/35 mt-0.5">{item.what}</div>
                   </div>
                 </div>
               ))}
             </div>
           </div>
 
-          <!-- Three pillars -->
           <div class="grid grid-cols-3 gap-3">
             {[
               { title: "Fund & Enable Programs", n: "01" },
@@ -664,7 +686,7 @@ import Layout from "../layouts/Layout.astro";
   </section>
 
   <!-- ============================================================
-       CLOSING — THE CONSTANT
+       CLOSING
   ============================================================ -->
   <section class="bg-myna-black relative overflow-hidden">
 
@@ -673,53 +695,52 @@ import Layout from "../layouts/Layout.astro";
     </div>
 
     <div class="relative max-w-7xl mx-auto px-5 sm:px-8 py-20 lg:py-28">
-
       <div class="max-w-3xl mx-auto text-center">
 
         <div class="inline-flex items-center gap-2 mb-8">
           <span class="h-px w-8 bg-myna-amber"></span>
-          <span class="text-xs font-bold uppercase tracking-widest text-myna-amber">
-            What held
-          </span>
+          <span class="text-xs font-bold uppercase tracking-widest text-myna-amber">What held</span>
           <span class="h-px w-8 bg-myna-amber"></span>
         </div>
 
         <h2 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-myna-white tracking-tight leading-tight mb-8">
-          Five organizations.<br />
-          One mission.
+          Different paths.<br />One direction.
         </h2>
 
         <p class="text-base text-myna-white/50 leading-relaxed mb-12 max-w-xl mx-auto">
-          Startup Village. SV.CO. Pupilfirst. The Second Design. EduMyna. Different names, different models, different customers, different delivery. The same question, asked each time with more precision: how do we help people become genuinely capable?
+          The work changed form many times. The question — how do we help people become genuinely capable? — never did. EduMyna is what it looks like when you've spent long enough asking that question to know what the answer requires.
         </p>
 
         <!-- Timeline of names -->
-        <div class="flex flex-col sm:flex-row items-center justify-center gap-0 sm:gap-0 mb-16">
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-0 mb-16 overflow-x-auto">
           {[
-            { year: "2012", name: "Startup Village" },
-            { year: "2015", name: "SV.CO" },
-            { year: "2018", name: "Pupilfirst" },
-            { year: "2022", name: "The Second Design" },
-            { year: "2024", name: "EduMyna" },
+            { year: "2012", name: "Startup Village", mine: false },
+            { year: "2015", name: "SV.CO", mine: false },
+            { year: "2018", name: "Pupilfirst", mine: false },
+            { year: "2022", name: "HowToCBC", mine: true },
+            { year: "2024", name: "EduMyna", mine: true },
           ].map((item, i) => (
-            <div class="flex sm:flex-col items-center sm:items-center gap-2 sm:gap-0">
-              <div class="flex flex-col sm:flex-row items-center gap-0 sm:gap-0">
+            <div class="flex sm:flex-col items-center gap-2 sm:gap-0">
+              <div class="flex flex-col sm:flex-row items-center gap-0">
                 <div class="flex flex-col items-center">
                   <div class:list={[
                     "w-3 h-3 rounded-full border-2 flex-shrink-0",
-                    i === 4 ? "bg-myna-amber border-myna-amber" : "bg-transparent border-myna-amber/40"
+                    item.mine ? "bg-myna-amber border-myna-amber" : "bg-transparent border-myna-white/20"
                   ]}></div>
                   <div class="text-[10px] text-myna-amber/50 mt-1 sm:hidden">{item.year}</div>
                 </div>
                 {i < 4 && (
-                  <div class="w-px h-8 sm:h-px sm:w-12 lg:w-16 bg-myna-amber/20"></div>
+                  <div class:list={[
+                    "w-px h-8 sm:h-px sm:w-12 lg:w-16",
+                    i === 3 ? "bg-myna-amber/40" : "bg-myna-white/10"
+                  ]}></div>
                 )}
               </div>
               <div class="sm:mt-3 text-center">
-                <div class="hidden sm:block text-[10px] text-myna-amber/50 mb-1">{item.year}</div>
+                <div class="hidden sm:block text-[10px] text-myna-amber/40 mb-1">{item.year}</div>
                 <div class:list={[
                   "text-xs font-bold uppercase tracking-wider",
-                  i === 4 ? "text-myna-amber" : "text-myna-white/30"
+                  item.mine ? "text-myna-amber" : "text-myna-white/20"
                 ]}>{item.name}</div>
               </div>
             </div>
@@ -727,20 +748,17 @@ import Layout from "../layouts/Layout.astro";
         </div>
 
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <a
-            href="/contact"
+          <a href="/contact"
             class="inline-flex items-center justify-center rounded-sm bg-myna-amber px-7 py-3.5 text-sm font-bold text-myna-black hover:bg-myna-amber-dark transition-colors tracking-wide uppercase">
             Get involved
           </a>
-          <a
-            href="/story"
+          <a href="/story"
             class="inline-flex items-center justify-center rounded-sm border border-myna-white/20 px-7 py-3.5 text-sm font-bold text-myna-white hover:border-myna-amber hover:text-myna-amber transition-colors tracking-wide uppercase">
             Read the full story
           </a>
         </div>
 
       </div>
-
     </div>
   </section>
 
